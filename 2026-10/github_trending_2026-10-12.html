@@ -1,0 +1,381 @@
+<title>AI 트렌드 리포트</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Public+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #10131c;
+    --surface: #171b28;
+    --surface-2: #1d2231;
+    --border: #2a3046;
+    --fg: #eef0f7;
+    --muted: #98a1ba;
+    --muted-2: #6b7590;
+    --accent: #f2a154;
+    --accent-soft: rgba(242,161,84,.14);
+    --accent-2: #6fd6c4;
+    --accent-2-soft: rgba(111,214,196,.14);
+    --streak: #e8609a;
+    color-scheme: dark;
+  }
+  @media (prefers-color-scheme: light) {
+    :root:not([data-theme="dark"]) {
+      --bg: #f4f5f8;
+      --surface: #ffffff;
+      --surface-2: #eceef4;
+      --border: #d9dded;
+      --fg: #171a26;
+      --muted: #545d74;
+      --muted-2: #7c8398;
+      --accent: #c97a2e;
+      --accent-soft: rgba(201,122,46,.12);
+      --accent-2: #2c8f7f;
+      --accent-2-soft: rgba(44,143,127,.12);
+      --streak: #c23a73;
+      color-scheme: light;
+    }
+  }
+  :root[data-theme="light"] {
+    --bg: #f4f5f8;
+    --surface: #ffffff;
+    --surface-2: #eceef4;
+    --border: #d9dded;
+    --fg: #171a26;
+    --muted: #545d74;
+    --muted-2: #7c8398;
+    --accent: #c97a2e;
+    --accent-soft: rgba(201,122,46,.12);
+    --accent-2: #2c8f7f;
+    --accent-2-soft: rgba(44,143,127,.12);
+    --streak: #c23a73;
+    color-scheme: light;
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    background: var(--bg);
+    color: var(--fg);
+    font-family: "Public Sans", -apple-system, sans-serif;
+    padding-inline: 16px;
+    padding-block: 32px 56px;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; }
+
+  .eyebrow {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 11px;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    color: var(--muted-2);
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .eyebrow .dot { width: 5px; height: 5px; border-radius: 50%; background: var(--accent); }
+
+  h1 {
+    font-family: "Fraunces", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-size: clamp(28px, 6vw, 40px);
+    line-height: 1.08;
+    margin: 10px 0 6px;
+    text-wrap: balance;
+  }
+  .sub {
+    color: var(--muted);
+    font-size: 14.5px;
+    line-height: 1.6;
+    max-width: 56ch;
+  }
+  .sub a { color: var(--fg); text-decoration-color: var(--border); text-underline-offset: 3px; }
+  .sub a:hover { text-decoration-color: var(--accent); }
+
+  .stats {
+    display: flex;
+    gap: 12px;
+    margin-top: 22px;
+    flex-wrap: wrap;
+  }
+  .stat {
+    flex: 1;
+    min-width: 130px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 12px 14px;
+  }
+  .stat .n {
+    font-family: "IBM Plex Mono", monospace;
+    font-variant-numeric: tabular-nums;
+    font-size: 22px;
+    font-weight: 600;
+  }
+  .stat .n small { font-size: 13px; color: var(--muted); font-weight: 400; }
+  .stat .l { font-size: 12px; color: var(--muted); margin-top: 2px; }
+
+  .tabs {
+    display: flex;
+    gap: 4px;
+    margin-top: 28px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 4px;
+    width: fit-content;
+  }
+  .tab {
+    appearance: none;
+    border: none;
+    background: transparent;
+    color: var(--muted);
+    font-family: "Public Sans", sans-serif;
+    font-size: 13.5px;
+    font-weight: 600;
+    padding: 7px 14px;
+    border-radius: 7px;
+    cursor: pointer;
+  }
+  .tab[aria-selected="true"] { background: var(--surface-2); color: var(--fg); }
+  .tab:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+  .list { margin-top: 18px; display: flex; flex-direction: column; gap: 2px; }
+  .list[hidden] { display: none; }
+  .row {
+    display: grid;
+    grid-template-columns: 28px 1fr auto;
+    gap: 4px 14px;
+    align-items: start;
+    padding: 14px 4px;
+    border-bottom: 1px solid var(--border);
+  }
+  .row:last-child { border-bottom: none; }
+
+  .rank {
+    font-family: "IBM Plex Mono", monospace;
+    font-variant-numeric: tabular-nums;
+    color: var(--muted-2);
+    font-size: 13px;
+    padding-top: 2px;
+  }
+
+  .main { min-width: 0; }
+  .name-line { display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; }
+  .name {
+    font-weight: 700;
+    font-size: 15.5px;
+    color: var(--fg);
+    text-decoration: none;
+  }
+  .name:hover { color: var(--accent); }
+  .name .owner { color: var(--muted); font-weight: 500; }
+  .lang {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 11px;
+    color: var(--muted);
+    border: 1px solid var(--border);
+    border-radius: 5px;
+    padding: 1px 6px;
+    white-space: nowrap;
+  }
+  .desc {
+    color: var(--muted);
+    font-size: 13.5px;
+    line-height: 1.55;
+    margin-top: 4px;
+    max-width: 60ch;
+  }
+
+  .metric { text-align: right; min-width: 108px; }
+  .stars {
+    font-family: "IBM Plex Mono", monospace;
+    font-variant-numeric: tabular-nums;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .delta {
+    font-family: "IBM Plex Mono", monospace;
+    font-variant-numeric: tabular-nums;
+    font-size: 12px;
+    color: var(--accent);
+    margin-top: 2px;
+  }
+  .streak {
+    display: inline-block;
+    font-family: "IBM Plex Mono", monospace;
+    font-variant-numeric: tabular-nums;
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--streak);
+    background: color-mix(in srgb, var(--streak) 16%, transparent);
+    border-radius: 999px;
+    padding: 1px 7px;
+    margin-top: 4px;
+  }
+  .bar-track {
+    height: 4px;
+    background: var(--surface-2);
+    border-radius: 3px;
+    margin-top: 6px;
+    overflow: hidden;
+  }
+  .bar-fill { height: 100%; background: var(--accent); border-radius: 3px; }
+  [data-period="weekly"] .delta { color: var(--accent-2); }
+  [data-period="weekly"] .bar-fill { background: var(--accent-2); }
+
+  details.excluded {
+    margin-top: 22px;
+    border: 1px dashed var(--border);
+    border-radius: 10px;
+    padding: 12px 14px;
+  }
+  details.excluded summary {
+    cursor: pointer;
+    font-size: 13px;
+    color: var(--muted);
+    font-weight: 600;
+  }
+  details.excluded summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  details.excluded p {
+    font-size: 13px;
+    color: var(--muted-2);
+    line-height: 1.6;
+    margin: 10px 0 0;
+  }
+
+  @media (max-width: 480px) {
+    .row { grid-template-columns: 20px 1fr; }
+    .metric { grid-column: 1 / -1; text-align: left; padding-left: 20px; display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+    .bar-track { flex: 1; margin-top: 0; max-width: 120px; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    * { transition: none !important; }
+  }
+</style>
+
+<div class="wrap">
+  <div class="eyebrow"><span class="dot"></span>GITHUB TRENDING · AI ONLY</div>
+  <h1>AI 트렌드 리포트</h1>
+  <p class="sub">
+    <a href="https://github.com/trending?since=daily">github.com/trending?since=daily</a> ·
+    <a href="https://github.com/trending?since=weekly">since=weekly</a>
+    에서 AI 관련 저장소만 추려 정리했습니다. 조회일 2026-10-12, 별 수는 조회 시점 값입니다.
+    분홍 배지(+N)는 이전 리포트(10-02 · 10-07 · 10-08)에 몇 번 더 등장했는지를 뜻하고, 등장 횟수가 많은 순으로 위로 올렸습니다.
+  </p>
+
+  <div class="stats" id="stats"></div>
+
+  <div class="tabs" role="tablist">
+    <button class="tab" id="tab-daily" role="tab" aria-selected="true" aria-controls="panel-daily">Daily</button>
+    <button class="tab" id="tab-weekly" role="tab" aria-selected="false" aria-controls="panel-weekly">Weekly</button>
+  </div>
+
+  <div class="list" id="panel-daily" role="tabpanel" aria-labelledby="tab-daily" data-period="daily"></div>
+  <div class="list" id="panel-weekly" role="tabpanel" aria-labelledby="tab-weekly" data-period="weekly" hidden></div>
+
+  <details class="excluded">
+    <summary>제외한 저장소 (Daily 3개 · Weekly 3개)</summary>
+    <p><b>Daily</b> — boykopovar/AnyPS5(PS5 실행파일 포팅) · bilawalsidhu/gods-eye-view(위성 시뮬레이터) · chrislgarry/Apollo-11(아폴로 11 소스)<br>
+    <b>Weekly</b> — boykopovar/AnyPS5 · EpicGames/raddebugger(그래픽 디버거) · flutter/flutter(앱 UI 프레임워크) — AI 자체를 다루는 프로젝트가 아니라 제외했습니다.</p>
+  </details>
+</div>
+
+<script>
+  const daily = [
+    { owner: "morluto", repo: "rea", lang: "TypeScript", stars: 103128, delta: 25585, streak: 2,
+      desc: "에이전트로 무엇이든 리버스 엔지니어링 — 앱 동작 분석부터 네이티브 바이너리까지" },
+    { owner: "storytold", repo: "artcraft", lang: "Rust", stars: 17790, delta: 2956, streak: 0,
+      desc: "AI 이미지·영상 제작용 IDE — 2D 구성과 3D 장면 연출로 이미지·영상·음악·3D 메시를 생성" },
+    { owner: "cathrynlavery", repo: "diagram-design", lang: "HTML", stars: 50295, delta: 1083, streak: 2,
+      desc: "Claude Code, Codex, GitHub Copilot, Cursor 등에서 쓰는 다이어그램 디자인 스킬 — 44종 다이어그램을 독립 HTML+SVG로 출력" },
+    { owner: "pytorch", repo: "pytorch", lang: "Python", stars: 104468, delta: 314, streak: 0,
+      desc: "GPU 가속을 지원하는 Python 텐서·동적 신경망 프레임워크 — 딥러닝 모델 학습·추론의 표준 도구" },
+    { owner: "lyogavin", repo: "airllm", lang: "Jupyter Notebook", stars: 36452, delta: 541, streak: 0,
+      desc: "4GB GPU 한 장으로 70B 모델 추론 — 대형 LLM을 저사양 GPU에서 실행" }
+  ];
+
+  const weekly = [
+    { owner: "tester-army", repo: "e2e", lang: "TypeScript", stars: 9031, delta: 6564, streak: 0,
+      desc: "웹·모바일 앱용 차세대 e2e 테스트 프레임워크 — 자연어로 목표를 적으면 에이전트가 앱을 조작하고, 기록한 단계는 모델 호출 없이 재생" },
+    { owner: "mattpocock", repo: "skills", lang: "Shell", stars: 286175, delta: 9179, streak: 3,
+      desc: "실무 엔지니어를 위한 에이전트 스킬 모음 — 작성자의 .agents 디렉터리를 그대로 공개" },
+    { owner: "thedotmack", repo: "claude-mem", lang: "TypeScript", stars: 99729, delta: 4035, streak: 2,
+      desc: "에이전트 세션 간 기억 유지 — 세션 활동을 AI로 압축해 이후 세션에 관련 맥락을 주입하며 Claude Code, Codex, Gemini 등 지원" },
+    { owner: "heygen-com", repo: "hyperframes", lang: "TypeScript", stars: 60955, delta: 4081, streak: 3,
+      desc: "HTML로 작성해 영상으로 렌더링 — 에이전트가 쓰기 좋게 만든 영상 제작 도구" },
+    { owner: "cursor", repo: "plugins", lang: "TypeScript", stars: 10896, delta: 1110, streak: 0,
+      desc: "Cursor 플러그인 명세와 공식 플러그인 모음" },
+    { owner: "earthtojake", repo: "text-to-cad", lang: "Python", stars: 19249, delta: 2369, streak: 1,
+      desc: "에이전트에 CAD 능력 부여 — 텍스트로 CAD 모델 생성" },
+    { owner: "mvschwarz", repo: "openrig", lang: "TypeScript", stars: 6967, delta: 2068, streak: 3,
+      desc: "Claude Code, Codex, Pi로 나만의 에이전트 네트워크 구축 — 역할·공유 맥락·담당 업무를 갖춘 상시 팀 구성" },
+    { owner: "danyuchn", repo: "asd-ste100-skill", lang: "Python", stars: 4467, delta: 945, streak: 0,
+      desc: "ASD-STE100 간이 기술 영어 규칙을 Claude Code 스킬로 — 모호한 에이전트용 영어 문장을 명확하게 재작성" },
+    { owner: "ranxianglei", repo: "billion-context", lang: "TypeScript", stars: 901, delta: 259, streak: 0,
+      desc: "컨텍스트 압축 플러그인 — 100K 창으로도 충분하고 토큰을 5배 절약하며 수십억 토큰 규모의 월 단위 단일 세션 지원" }
+  ];
+
+  function fmt(n) { return n.toLocaleString("en-US"); }
+
+  function renderList(el, items) {
+    const maxDelta = Math.max(...items.map(i => i.delta));
+    el.innerHTML = items.map((item, idx) => {
+      const pct = Math.max(6, Math.round((item.delta / maxDelta) * 100));
+      const url = "https://github.com/" + item.owner + "/" + item.repo;
+      const streakBadge = item.streak > 0
+        ? '<div class="streak" title="이전 리포트(10-02 · 10-07 · 10-08)에 ' + item.streak + '번 더 등장">+' + item.streak + '</div>'
+        : '';
+      return (
+        '<div class="row">' +
+          '<div class="rank">' + String(idx + 1).padStart(2, "0") + '</div>' +
+          '<div class="main">' +
+            '<div class="name-line">' +
+              '<a class="name" href="' + url + '">' +
+                '<span class="owner">' + item.owner + '/</span>' + item.repo +
+              '</a>' +
+              '<span class="lang">' + item.lang + '</span>' +
+            '</div>' +
+            '<div class="desc">' + item.desc + '</div>' +
+          '</div>' +
+          '<div class="metric">' +
+            '<div class="stars">' + fmt(item.stars) + '</div>' +
+            '<div class="delta">+' + fmt(item.delta) + '</div>' +
+            streakBadge +
+            '<div class="bar-track"><div class="bar-fill" style="width:' + pct + '%"></div></div>' +
+          '</div>' +
+        '</div>'
+      );
+    }).join("");
+  }
+
+  function sortByStreak(items) {
+    return items
+      .map((item, i) => ({ item, i }))
+      .sort((a, b) => (b.item.streak - a.item.streak) || (a.i - b.i))
+      .map(x => x.item);
+  }
+
+  renderList(document.getElementById("panel-daily"), sortByStreak(daily));
+  renderList(document.getElementById("panel-weekly"), sortByStreak(weekly));
+
+  document.getElementById("stats").innerHTML =
+    '<div class="stat"><div class="n">5 <small>/ 8</small></div><div class="l">Daily 중 AI 관련</div></div>' +
+    '<div class="stat"><div class="n">9 <small>/ 12</small></div><div class="l">Weekly 중 AI 관련</div></div>';
+
+  const tabDaily = document.getElementById("tab-daily");
+  const tabWeekly = document.getElementById("tab-weekly");
+  const panelDaily = document.getElementById("panel-daily");
+  const panelWeekly = document.getElementById("panel-weekly");
+
+  function selectTab(which) {
+    const isDaily = which === "daily";
+    tabDaily.setAttribute("aria-selected", String(isDaily));
+    tabWeekly.setAttribute("aria-selected", String(!isDaily));
+    panelDaily.hidden = !isDaily;
+    panelWeekly.hidden = isDaily;
+  }
+  tabDaily.addEventListener("click", () => selectTab("daily"));
+  tabWeekly.addEventListener("click", () => selectTab("weekly"));
+</script>
