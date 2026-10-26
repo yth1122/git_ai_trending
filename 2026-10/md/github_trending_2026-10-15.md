@@ -26,4 +26,4 @@ Daily 트렌딩 12개 중 AI 관련 7개
 
 제외(AI 아님): nvm-sh/nvm(Node 버전 관리) · rust-lang/rust(프로그래밍 언어) · xtool-org/xtool(Xcode 대체 빌드 도구) · ntdevlabs/tiny11builder(윈도11 경량화 도구) · NationalSecurityAgency/ghidra(리버스 엔지니어링 도구)
 
-전체 리포트(Weekly 포함): [github_trending_2026-10-15.html](github_trending_2026-10-15.html)
+전체 리포트(Weekly 포함): [github_trending_2026-10-15.html](../html/github_trending_2026-10-15.html)

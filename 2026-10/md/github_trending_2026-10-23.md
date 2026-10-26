@@ -23,4 +23,4 @@ Daily 트렌딩 9개 중 AI 관련 5개
 
 제외(AI 아님): php/php-src(PHP 인터프리터) · supabase/supabase(Postgres 개발 플랫폼) · fastapi/fastapi(Python 웹 프레임워크) · Meloong-Git/PCL(마인크래프트 런처)
 
-전체 리포트(Weekly 포함): [github_trending_2026-10-23.html](github_trending_2026-10-23.html)
+전체 리포트(Weekly 포함): [github_trending_2026-10-23.html](../html/github_trending_2026-10-23.html)

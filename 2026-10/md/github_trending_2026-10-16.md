@@ -30,4 +30,4 @@ Daily 트렌딩 12개 중 AI 관련 11개
 
 제외(AI 아님): NationalSecurityAgency/ghidra(리버스 엔지니어링 도구)
 
-전체 리포트(Weekly 포함): [github_trending_2026-10-16.html](github_trending_2026-10-16.html)
+전체 리포트(Weekly 포함): [github_trending_2026-10-16.html](../html/github_trending_2026-10-16.html)

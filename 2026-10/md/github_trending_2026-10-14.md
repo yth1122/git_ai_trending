@@ -26,4 +26,4 @@ Daily 트렌딩 9개 중 AI 관련 7개
 
 제외(AI 아님): bilawalsidhu/gods-eye-view(위성 시뮬레이터) · xtool-org/xtool(Xcode 대체 빌드 도구)
 
-전체 리포트(Weekly 포함): [github_trending_2026-10-14.html](github_trending_2026-10-14.html)
+전체 리포트(Weekly 포함): [github_trending_2026-10-14.html](../html/github_trending_2026-10-14.html)

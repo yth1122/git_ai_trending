@@ -1,6 +1,6 @@
 ---
 name: trending
-description: GitHub trending(daily/weekly)에서 AI 관련 저장소만 골라 한국어로 정리하고 이 저장소의 YYYY-MM/ 폴더에 github_trending_YYYY-MM-DD.html 리포트와 Daily 분석 .md를 만들고, README.md를 오늘자 분석으로 갱신한 뒤 git push한다. "/trending", "트렌딩 정리", "github trending 업데이트" 요청 시 사용.
+description: GitHub trending(daily/weekly)에서 AI 관련 저장소만 골라 한국어로 정리하고 이 저장소의 YYYY-MM/html/에 github_trending_YYYY-MM-DD.html 리포트, YYYY-MM/md/에 Daily 분석 .md를 만들고, README.md를 오늘자 분석으로 갱신한 뒤 git push한다. "/trending", "트렌딩 정리", "github trending 업데이트" 요청 시 사용.
 ---
 
 # GitHub AI 트렌드 리포트
@@ -35,8 +35,8 @@ description: GitHub trending(daily/weekly)에서 AI 관련 저장소만 골라 �
    ```
    python .claude/skills/trending/trending.py render
    ```
-   - `<YYYY-MM>/github_trending_<오늘>.html`: `template.html`을 채운 리포트 (daily·weekly)
-   - `<YYYY-MM>/github_trending_<오늘>.md`: Daily 분석과 Daily AI 저장소 표
+   - `<YYYY-MM>/html/github_trending_<오늘>.html`: `template.html`을 채운 리포트 (daily·weekly)
+   - `<YYYY-MM>/md/github_trending_<오늘>.md`: Daily 분석과 Daily AI 저장소 표
    - `README.md`: 오늘자 .md와 같은 내용 (링크만 저장소 루트 기준)
    - 같은 날 다시 실행하면 세 파일 모두 덮어씀
    - "분류되지 않은 저장소" 에러가 나면 picks.json에 그 저장소를 추가하고, "analysis가 없습니다" 에러가 나면 analysis를 채우고 다시 실행

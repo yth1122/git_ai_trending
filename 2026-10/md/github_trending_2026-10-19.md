@@ -32,4 +32,4 @@ Daily 트렌딩 13개 중 AI 관련 13개
 
 제외(AI 아님): 없음
 
-전체 리포트(Weekly 포함): [github_trending_2026-10-19.html](github_trending_2026-10-19.html)
+전체 리포트(Weekly 포함): [github_trending_2026-10-19.html](../html/github_trending_2026-10-19.html)

@@ -28,4 +28,4 @@ Daily 트렌딩 11개 중 AI 관련 9개
 
 제외(AI 아님): Renhuai123/ziwei-doushu(자미두수 명반 엔진) · coollabsio/coolify(셀프호스팅 PaaS)
 
-전체 리포트(Weekly 포함): [github_trending_2026-10-26.html](github_trending_2026-10-26.html)
+전체 리포트(Weekly 포함): [github_trending_2026-10-26.html](../html/github_trending_2026-10-26.html)

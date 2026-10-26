@@ -28,4 +28,4 @@ Daily 트렌딩 11개 중 AI 관련 9개
 
 제외(AI 아님): supabase/supabase(Postgres 개발 플랫폼) · twentyhq/twenty(오픈소스 CRM)
 
-전체 리포트(Weekly 포함): [github_trending_2026-10-22.html](github_trending_2026-10-22.html)
+전체 리포트(Weekly 포함): [github_trending_2026-10-22.html](../html/github_trending_2026-10-22.html)

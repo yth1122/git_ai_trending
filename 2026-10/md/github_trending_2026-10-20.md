@@ -30,4 +30,4 @@ Daily 트렌딩 12개 중 AI 관련 11개
 
 제외(AI 아님): withmarbleapp/os-taxonomy(초등 교육과정 분류 데이터)
 
-전체 리포트(Weekly 포함): [github_trending_2026-10-20.html](github_trending_2026-10-20.html)
+전체 리포트(Weekly 포함): [github_trending_2026-10-20.html](../html/github_trending_2026-10-20.html)

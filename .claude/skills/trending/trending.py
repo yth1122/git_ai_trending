@@ -51,7 +51,7 @@ def parse(page):
 
 def previous_reports(today):
     return sorted(
-        p for p in OUT_DIR.glob("*/github_trending_*.html")
+        p for p in OUT_DIR.glob("*/html/github_trending_*.html")
         if p.stem.removeprefix("github_trending_") < today
     )
 
@@ -159,13 +159,14 @@ def render():
     for k, v in replacements.items():
         page = page.replace(k, v)
     month = raw["date"][:7]
-    (OUT_DIR / month).mkdir(exist_ok=True)
-    target = OUT_DIR / month / f'github_trending_{raw["date"]}.html'
+    target = OUT_DIR / month / "html" / f'github_trending_{raw["date"]}.html'
+    target.parent.mkdir(parents=True, exist_ok=True)
     target.write_text(page, encoding="utf-8", newline="\n")
-    md = target.with_suffix(".md")
-    md.write_text(markdown(raw["date"], prev_label, out["daily"], analysis, target.name), encoding="utf-8", newline="\n")
+    md = OUT_DIR / month / "md" / f"{target.stem}.md"
+    md.parent.mkdir(exist_ok=True)
+    md.write_text(markdown(raw["date"], prev_label, out["daily"], analysis, f"../html/{target.name}"), encoding="utf-8", newline="\n")
     readme = OUT_DIR / "README.md"
-    readme.write_text(markdown(raw["date"], prev_label, out["daily"], analysis, f"{month}/{target.name}"), encoding="utf-8", newline="\n")
+    readme.write_text(markdown(raw["date"], prev_label, out["daily"], analysis, f"{month}/html/{target.name}"), encoding="utf-8", newline="\n")
     print(f'{target}  (Daily {len(out["daily"][0])}/{out["daily"][2]}, Weekly {len(out["weekly"][0])}/{out["weekly"][2]})')
     print(md)
     print(readme)
@@ -173,7 +174,7 @@ def render():
 
 def publish():
     day = json.loads(RAW.read_text(encoding="utf-8"))["date"]
-    files = [f"{day[:7]}/github_trending_{day}.html", f"{day[:7]}/github_trending_{day}.md", "README.md"]
+    files = [f"{day[:7]}/html/github_trending_{day}.html", f"{day[:7]}/md/github_trending_{day}.md", "README.md"]
     git = ["git", "-C", str(OUT_DIR)]
     subprocess.run([*git, "add", "--", *files], check=True)
     if subprocess.run([*git, "diff", "--cached", "--quiet", "--", *files]).returncode == 0:
