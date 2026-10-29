@@ -1,0 +1,403 @@
+<!doctype html>
+<html lang="ko">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI 트렌드 리포트</title>
+<link rel="icon" href="data:,">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hahmlet:wght@600&family=Public+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans+KR:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #10131c;
+    --surface: #171b28;
+    --surface-2: #1d2231;
+    --border: #2a3046;
+    --fg: #eef0f7;
+    --muted: #98a1ba;
+    --muted-2: #7c859e;
+    --accent: #f2a154;
+    --accent-soft: rgba(242,161,84,.14);
+    --accent-2: #6fd6c4;
+    --accent-2-soft: rgba(111,214,196,.14);
+    --streak: #e8609a;
+    --font-sans: "Public Sans", "IBM Plex Sans KR", -apple-system, sans-serif;
+    --font-mono: "IBM Plex Mono", "IBM Plex Sans KR", monospace;
+    --font-display: "Hahmlet", serif;
+    color-scheme: dark;
+  }
+  /* spacing steps: 4 · 8 · 12 · 16 · 24 · 32 · 48 */
+  * { box-sizing: border-box; }
+  body {
+    background: var(--bg);
+    color: var(--fg);
+    font-family: var(--font-sans);
+    word-break: keep-all;
+    overflow-wrap: anywhere;
+    margin: 0;
+    padding-inline: 16px;
+    padding-block: 40px 64px;
+  }
+  ::selection { background: color-mix(in srgb, var(--accent) 32%, transparent); }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 3px; }
+  .wrap { max-width: 680px; margin: 0 auto; }
+  .sr {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+  }
+
+  h1 {
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: clamp(28px, 6vw, 40px);
+    line-height: 1.08;
+    margin: 0 0 8px;
+    text-wrap: balance;
+  }
+  .meta {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    color: var(--muted-2);
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0;
+  }
+  .meta .dot { width: 5px; height: 5px; border-radius: 50%; background: var(--accent); }
+  .sub {
+    color: var(--muted);
+    font-size: 14.5px;
+    line-height: 1.6;
+    max-width: 56ch;
+    margin: 12px 0 0;
+  }
+  .sub a { color: var(--fg); text-decoration-color: var(--border); text-underline-offset: 3px; }
+  .sub a:hover { text-decoration-color: var(--accent); }
+
+  .tabs {
+    display: flex;
+    gap: 4px;
+    margin-top: 32px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 4px;
+    width: fit-content;
+  }
+  .tab {
+    appearance: none;
+    border: 1px solid transparent;
+    background: transparent;
+    color: var(--muted);
+    font-family: var(--font-sans);
+    font-size: 13.5px;
+    font-weight: 600;
+    min-height: 36px;
+    padding: 0 14px;
+    border-radius: 7px;
+    cursor: pointer;
+  }
+  .tab:hover { color: var(--fg); }
+  .tab[aria-selected="true"] { background: var(--surface-2); color: var(--fg); border-color: var(--muted-2); }
+  .tab:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .tab .count {
+    font-family: var(--font-mono);
+    font-variant-numeric: tabular-nums;
+    font-size: 12.5px;
+    font-weight: 500;
+    margin-left: 4px;
+  }
+
+  .list[hidden] { display: none; }
+  .group h2 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 2px 8px;
+    font-size: 17px;
+    font-weight: 700;
+    margin: 36px 0 0;
+  }
+  .group:first-child h2 { margin-top: 24px; }
+  .group h2 .hint { font-size: 12.5px; font-weight: 400; color: var(--muted-2); }
+  .rows { list-style: none; margin: 0; padding: 0; }
+  .row {
+    display: grid;
+    grid-template-columns: 44px 1fr auto;
+    gap: 4px 16px;
+    align-items: start;
+    padding: 12px 4px;
+    border-bottom: 1px solid var(--border);
+  }
+  .row:last-child { border-bottom: none; }
+
+  .mark {
+    font-family: var(--font-mono);
+    font-variant-numeric: tabular-nums;
+    font-weight: 600;
+    white-space: nowrap;
+  }
+  .mark.streak { color: var(--streak); font-size: 17px; line-height: 1.15; }
+  .mark.streak .u { font-size: 11px; margin-left: 1px; }
+  .mark.new { color: var(--accent); font-size: 10.5px; letter-spacing: .08em; padding-top: 4px; }
+  [data-period="weekly"] .mark.new { color: var(--accent-2); }
+
+  .main { min-width: 0; }
+  .name-line { display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; }
+  .name {
+    font-weight: 700;
+    font-size: 15.5px;
+    color: var(--fg);
+    text-decoration: none;
+  }
+  .name:hover { color: var(--accent); }
+  .name .owner { color: var(--muted); font-weight: 500; }
+  .lang {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    color: var(--muted);
+    border: 1px solid var(--border);
+    border-radius: 5px;
+    padding: 1px 6px;
+    white-space: nowrap;
+  }
+  .desc {
+    color: var(--muted);
+    font-size: 13.5px;
+    line-height: 1.55;
+    margin-top: 4px;
+    max-width: 60ch;
+  }
+
+  .metric { text-align: right; min-width: 108px; }
+  .stars {
+    font-family: var(--font-mono);
+    font-variant-numeric: tabular-nums;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .delta {
+    font-family: var(--font-mono);
+    font-variant-numeric: tabular-nums;
+    font-size: 12px;
+    color: var(--accent);
+    margin-top: 4px;
+  }
+  [data-period="weekly"] .delta { color: var(--accent-2); }
+  .metric .k {
+    font-family: var(--font-sans);
+    font-size: 11.5px;
+    font-weight: 400;
+    color: var(--muted);
+    margin-right: 4px;
+  }
+
+  .empty { color: var(--muted); font-size: 14px; padding: 24px 4px; margin: 0; }
+
+  details.excluded {
+    margin-top: 36px;
+    border: 1px dashed var(--border);
+    border-radius: 10px;
+    padding: 0 14px;
+  }
+  details.excluded summary {
+    cursor: pointer;
+    font-size: 13px;
+    color: var(--muted);
+    font-weight: 600;
+    line-height: 20px;
+    padding: 12px 0;
+  }
+  details.excluded summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  details.excluded p {
+    font-size: 13px;
+    color: var(--muted-2);
+    line-height: 1.6;
+    margin: 0 0 12px;
+  }
+  .foot {
+    font-size: 12.5px;
+    color: var(--muted-2);
+    line-height: 1.6;
+    margin: 12px 0 0;
+  }
+
+  @media (pointer: coarse) {
+    .tab { min-height: 44px; }
+    .name { padding-block: 13px; margin-block: -13px; }
+  }
+  @media (max-width: 480px) {
+    .row { grid-template-columns: 44px 1fr; column-gap: 12px; padding-inline: 0; }
+    .metric { grid-column: 2; text-align: left; min-width: 0; display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap; }
+    .delta { margin-top: 0; }
+  }
+</style>
+
+<main class="wrap">
+  <h1>AI 트렌드 리포트</h1>
+  <p class="meta"><span class="dot"></span>2026-10-29 · GITHUB TRENDING · AI ONLY</p>
+  <p class="sub">
+    <a href="https://github.com/trending?since=daily">GitHub 트렌딩 Daily</a>(14개)와
+    <a href="https://github.com/trending?since=weekly">Weekly</a>(11개)에서 AI 관련 저장소만 추렸습니다.
+    별 수는 조회 시점 값입니다.
+  </p>
+
+  <div class="tabs" role="tablist" aria-label="기간">
+    <button class="tab" id="tab-daily" role="tab" aria-selected="true" aria-controls="panel-daily">Daily<span class="count">10</span></button>
+    <button class="tab" id="tab-weekly" role="tab" aria-selected="false" aria-controls="panel-weekly" tabindex="-1">Weekly<span class="count">11</span></button>
+  </div>
+
+  <div class="list" id="panel-daily" role="tabpanel" aria-labelledby="tab-daily" data-period="daily"></div>
+  <div class="list" id="panel-weekly" role="tabpanel" aria-labelledby="tab-weekly" data-period="weekly" hidden></div>
+
+  <details class="excluded">
+    <summary>제외한 저장소 (Daily 4개 · Weekly 0개)</summary>
+    <p>AI 자체를 다루는 프로젝트가 아니라 제외했습니다.</p>
+    <p><b>Daily</b> — macro-inc/macro(팀 협업 워크스페이스) · hmjz100/LinkSwift(클라우드 드라이브 직링크 도구) · ruvnet/RuView(WiFi 신호 센싱 시스템) · xiaolai/the-craft-of-selfteaching(독학 프로그래밍 교재)<br>
+    <b>Weekly</b> — 없음</p>
+  </details>
+  <p class="foot" id="foot"></p>
+</main>
+
+<script>
+  const daily = [
+    { owner: "JetBrains", repo: "thinkrail", lang: "TypeScript", stars: 5017, delta: 1068, streak: 3,
+      desc: "pi 코딩 에이전트로 바이브 코딩하는 가벼운 진짜 IDE — 사용자의 작업 방식에 맞춰 스스로 바뀜" },
+    { owner: "elayadesign", repo: "ai-design-skills", lang: "-", stars: 11086, delta: 2139, streak: 1,
+      desc: "AI 코딩 도구용 디자인 스킬 모음 — Claude Code·Cursor·Codex·Windsurf에 폴더째 설치하는 랜딩 페이지 설계 스킬 등" },
+    { owner: "obra", repo: "superpowers", lang: "Shell", stars: 307423, delta: 1095, streak: 3,
+      desc: "실제로 통하는 에이전틱 스킬 프레임워크 — 소프트웨어 개발 방법론까지 함께 제공" },
+    { owner: "HKUDS", repo: "DeepTutor", lang: "Python", stars: 47931, delta: 2371, streak: 1,
+      desc: "평생 함께하는 개인 맞춤형 AI 튜터 — 학습자에 맞춰 가르치는 튜터링 시스템" },
+    { owner: "Nutlope", repo: "hallmark", lang: "CSS", stars: 40671, delta: 2110, streak: 3,
+      desc: "AI 티가 나는 뻔한 디자인을 막아 주는 디자인 스킬 — Claude Code·Cursor·Codex용" },
+    { owner: "pbakaus", repo: "impeccable", lang: "Rust", stars: 92595, delta: 1472, streak: 5,
+      desc: "코딩 에이전트를 위한 디자인 어휘 — polish·bolder로 방향을 잡고 critique·audit으로 검토해 AI 티 나는 결과물을 배포 전에 걸러 냄" },
+    { owner: "makecindy", repo: "cindy", lang: "TypeScript", stars: 8080, delta: 728, streak: 3,
+      desc: "맡기기만 하면 끝내 주는 오픈소스 AI 에이전트 — 설치하자마자 바로 쓸 수 있음" },
+    { owner: "nightly-labs", repo: "openbot", lang: "TypeScript", stars: 3231, delta: 1054, streak: 2,
+      desc: "상주하는 AI 동료를 위한 로컬 우선 데스크톱 작업 공간 — Codex·Claude·Grok을 전용 작업 공간·작업 큐·파일 공유·브라우저 제어·에이전트 간 협업으로 실행" },
+    { owner: "togg53192-cmd", repo: "jailbreaks", lang: "-", stars: 7068, delta: 1477, streak: 1,
+      desc: "LLM 탈옥 프롬프트 모음 — Claude·Gemini·GLM·DeepSeek 등 25종 이상 모델을 겨냥한 시스템 프롬프트·페르소나·AGENTS.md 31개, 연구·교육용 표방" },
+    { owner: "expo", repo: "skills", lang: "Shell", stars: 3562, delta: 90, streak: 0,
+      desc: "Expo 프로젝트 작업을 돕는 AI 에이전트 스킬 모음 — Expo Application Services(EAS) 사용까지 다룸" }
+  ];
+
+  const weekly = [
+    { owner: "cloudflare", repo: "security-audit-skill", lang: "JavaScript", stars: 51646, delta: 16002, streak: 7,
+      desc: "여러 단계로 보안 감사를 수행하는 코딩 에이전트 스킬 — 발견한 문제를 독립적으로 검증하고 기계가 읽을 수 있는 형식으로 출력" },
+    { owner: "AgriciDaniel", repo: "claude-seo", lang: "Python", stars: 23360, delta: 3516, streak: 3,
+      desc: "Claude Code용 범용 SEO 스킬 — 하위 스킬 26개·서브에이전트 19개로 기술 SEO, E-E-A-T, 스키마, GEO/AEO, 에이전트 대응(WebMCP, llms.txt), 백링크·로컬·국제 SEO와 PDF/Excel 보고서까지 다룸" },
+    { owner: "multica-ai", repo: "andrej-karpathy-skills", lang: "-", stars: 225977, delta: 4293, streak: 3,
+      desc: "Claude Code의 동작을 개선하는 CLAUDE.md 파일 하나 — Andrej Karpathy가 짚은 LLM 코딩 함정에서 도출" },
+    { owner: "anthropics", repo: "knowledge-work-plugins", lang: "Python", stars: 33651, delta: 2612, streak: 5,
+      desc: "지식 노동자가 Claude Cowork에서 쓰도록 만든 오픈소스 플러그인 저장소 — 업무용 플러그인 모음" },
+    { owner: "TauricResearch", repo: "TradingAgents", lang: "Python", stars: 117874, delta: 5322, streak: 3,
+      desc: "여러 LLM 에이전트로 금융 트레이딩을 수행하는 프레임워크 — 멀티 에이전트 협업 구조" },
+    { owner: "pbakaus", repo: "impeccable", lang: "Rust", stars: 92595, delta: 7283, streak: 5,
+      desc: "코딩 에이전트를 위한 디자인 어휘 — polish·bolder로 방향을 잡고 critique·audit으로 검토해 AI 티 나는 결과물을 배포 전에 걸러 냄" },
+    { owner: "Graphify-Labs", repo: "graphify", lang: "Python", stars: 137828, delta: 6662, streak: 6,
+      desc: "코드베이스와 문서·SQL 스키마·설정·PDF를 질의 가능한 지식 그래프로 변환 — Claude Code·Cursor·Codex·Gemini CLI용 /graphify 스킬, 로컬 AST 파싱으로 모든 연결에 근거를 달고 벡터 저장소 없이 동작" },
+    { owner: "Leonxlnx", repo: "taste-skill", lang: "JavaScript", stars: 104444, delta: 3940, streak: 0,
+      desc: "코딩 에이전트에 안목을 더하는 에이전트 스킬 — 뻔한 AI 페이지 대신 아트 디렉션·레퍼런스 이미지·브라우저 확인을 거쳐 화면을 만듦" },
+    { owner: "ruvnet", repo: "ruflo", lang: "TypeScript", stars: 79973, delta: 1930, streak: 9,
+      desc: "원조 에이전트 하네스 — 멀티 에이전트 스웜 배포와 자율 워크플로 조율, 적응형 메모리·자기 학습·벡터 RAG를 갖추고 Claude Code·Codex·Hermes 등과 기본 연동" },
+    { owner: "anomalyco", repo: "opencode", lang: "TypeScript", stars: 222750, delta: 3498, streak: 8,
+      desc: "오픈소스 코딩 에이전트 — 터미널에서 쓰는 AI 코딩 도구" },
+    { owner: "jakubkrehel", repo: "skills", lang: "Markdown", stars: 8970, delta: 776, streak: 0,
+      desc: "좋은 인터페이스를 만들도록 돕는 에이전트 스킬 모음 — UI 구현 품질에 초점" }
+  ];
+
+  const prev = "10-02 · 10-07 · 10-08 · 10-12 · 10-13 · 10-14 · 10-15 · 10-16 · 10-19 · 10-20 · 10-21 · 10-22 · 10-23 · 10-26 · 10-27 · 10-28";
+  const prevDates = prev === "없음" ? [] : prev.split(" · ");
+  const prevN = prevDates.length;
+  document.getElementById("foot").textContent = prevN
+    ? "비교한 이전 리포트 " + prevN + "개 (" + prevDates[0] + (prevN > 1 ? " ~ " + prevDates[prevN - 1] : "") + ")"
+    : "비교한 이전 리포트 없음";
+
+  function fmt(n) { return n.toLocaleString("en-US"); }
+  function esc(s) {
+    return String(s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]);
+  }
+
+  function row(item, period) {
+    const url = "https://github.com/" + item.owner + "/" + item.repo;
+    const mark = item.streak > 0
+      ? '<div class="mark streak"><span aria-hidden="true">' + item.streak + '<span class="u">회</span></span>' +
+        '<span class="sr">이전 ' + item.streak + '회 등장</span></div>'
+      : '<div class="mark new"><span aria-hidden="true">NEW</span><span class="sr">처음 등장</span></div>';
+    const lang = item.lang === "-" ? "" : '<span class="lang">' + esc(item.lang) + '</span>';
+    return (
+      '<li class="row">' +
+        mark +
+        '<div class="main">' +
+          '<div class="name-line">' +
+            '<a class="name" href="' + esc(url) + '">' +
+              '<span class="owner">' + esc(item.owner) + '/</span>' + esc(item.repo) +
+            '</a>' +
+            lang +
+          '</div>' +
+          '<div class="desc">' + esc(item.desc) + '</div>' +
+        '</div>' +
+        '<div class="metric">' +
+          '<div class="stars"><span class="k">전체</span>' + fmt(item.stars) + '</div>' +
+          '<div class="delta"><span class="k">' + (period === "daily" ? "오늘" : "이번 주") + '</span>+' + fmt(item.delta) + '</div>' +
+        '</div>' +
+      '</li>'
+    );
+  }
+
+  function group(title, hint, items, period) {
+    if (!items.length) return "";
+    return (
+      '<section class="group">' +
+        '<h2>' + title + '<span class="hint">' + hint + '</span></h2>' +
+        '<ol class="rows">' + items.map(item => row(item, period)).join("") + '</ol>' +
+      '</section>'
+    );
+  }
+
+  function renderList(el, items, period) {
+    if (!items.length) {
+      el.innerHTML = '<p class="empty">' + (period === "daily" ? "오늘은" : "이번 주는") + ' AI 관련 저장소가 없습니다.</p>';
+      return;
+    }
+    // sort is stable, so ties keep GitHub's order
+    const fresh = items.filter(item => item.streak === 0);
+    const repeat = items.filter(item => item.streak > 0).sort((a, b) => b.streak - a.streak);
+    el.innerHTML =
+      group("처음 등장", "이전 리포트에 없던 저장소", fresh, period) +
+      group("계속 뜨는 중", "숫자는 이전 리포트 " + prevN + "개 중 등장한 횟수", repeat, period);
+  }
+
+  renderList(document.getElementById("panel-daily"), daily, "daily");
+  renderList(document.getElementById("panel-weekly"), weekly, "weekly");
+
+  const tabs = [document.getElementById("tab-daily"), document.getElementById("tab-weekly")];
+  const panels = [document.getElementById("panel-daily"), document.getElementById("panel-weekly")];
+
+  function selectTab(i, focus) {
+    tabs.forEach((tab, j) => {
+      tab.setAttribute("aria-selected", String(i === j));
+      tab.tabIndex = i === j ? 0 : -1;
+      panels[j].hidden = i !== j;
+    });
+    if (focus) tabs[i].focus();
+  }
+  tabs.forEach((tab, i) => {
+    tab.addEventListener("click", () => selectTab(i));
+    tab.addEventListener("keydown", e => {
+      const to = { ArrowRight: i + 1, ArrowLeft: i - 1, Home: 0, End: tabs.length - 1 }[e.key];
+      if (to === undefined) return;
+      e.preventDefault();
+      selectTab((to + tabs.length) % tabs.length, true);
+    });
+  });
+</script>
