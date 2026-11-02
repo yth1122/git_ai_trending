@@ -1,0 +1,39 @@
+# 클라우드 예약 작업은 github.com/trending에 접근할 수 없어서(저장소 범위 프록시),
+# fetch만 여기서 돌리고 결과(work/raw.json)를 커밋해 둔다. 예약 작업은 이 파일로 render·publish만 한다.
+name: fetch-trending
+
+on:
+  schedule:
+    - cron: "20 23 * * *" # 한국 시간 08:20 (예약 작업 09:07보다 먼저, Actions 지연 감안)
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: [".github/workflows/fetch-trending.yml"]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: fetch-trending
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python .claude/skills/trending/trending.py fetch > /dev/null
+      - name: Commit raw.json
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -f .claude/skills/trending/work/raw.json
+          if git diff --cached --quiet; then
+            echo "변경 없음"
+            exit 0
+          fi
+          git commit -m "raw $(python -c 'import json;print(json.load(open(".claude/skills/trending/work/raw.json"))["date"])')"
+          git pull --rebase origin main
+          git push origin main
