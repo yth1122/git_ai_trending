@@ -1,5 +1,5 @@
 {
-  "date": "2026-11-05",
+  "date": "2026-11-06",
   "prev": [
     "2026-10-02",
     "2026-10-07",
@@ -28,144 +28,135 @@
       "owner": "NVIDIA",
       "repo": "auto-ontology",
       "lang": "Python",
-      "stars": 5370,
-      "delta": 2050,
+      "stars": 7581,
+      "delta": 2679,
       "desc_en": "Auto Ontology is a Python framework for building semantic, graph-based reasoning layers over data. It enables deterministic query generation, better context retrieval, and more explainable AI for LLM and agent workflows.",
       "streak": 0
-    },
-    {
-      "owner": "max-sixty",
-      "repo": "worktrunk",
-      "lang": "Rust",
-      "stars": 11109,
-      "delta": 531,
-      "desc_en": "Worktrunk is a CLI for Git worktree management, designed for parallel AI agent workflows",
-      "streak": 2
     },
     {
       "owner": "mattpocock",
       "repo": "skills",
       "lang": "Shell",
-      "stars": 313509,
-      "delta": 1379,
+      "stars": 315451,
+      "delta": 2071,
       "desc_en": "Skills for Real Engineers. Straight from my .agents directory.",
       "streak": 10
-    },
-    {
-      "owner": "floci-io",
-      "repo": "floci",
-      "lang": "Java",
-      "stars": 29710,
-      "delta": 1090,
-      "desc_en": "Light, fluffy, and always free - The AWS Local Emulator alternative",
-      "streak": 0
-    },
-    {
-      "owner": "thedotmack",
-      "repo": "claude-mem",
-      "lang": "TypeScript",
-      "stars": 112965,
-      "delta": 1172,
-      "desc_en": "Persistent Context Across Sessions for Every Agent – Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More",
-      "streak": 10
-    },
-    {
-      "owner": "vercel-labs",
-      "repo": "agent-desktop",
-      "lang": "Rust",
-      "stars": 15397,
-      "delta": 2470,
-      "desc_en": "Computer use CLI for AI agents",
-      "streak": 2
-    },
-    {
-      "owner": "github",
-      "repo": "spec-kit",
-      "lang": "Python",
-      "stars": 147392,
-      "delta": 808,
-      "desc_en": "💫 Toolkit to help you get started with SDD or any other process!",
-      "streak": 0
-    },
-    {
-      "owner": "The-PR-Agent",
-      "repo": "pr-agent",
-      "lang": "Python",
-      "stars": 14832,
-      "delta": 280,
-      "desc_en": "🚀 PR Agent: The Original Open-Source PR Reviewer. This project is not the Qodo free tier.",
-      "streak": 0
-    },
-    {
-      "owner": "harry0703",
-      "repo": "MoneyPrinterTurbo",
-      "lang": "Python",
-      "stars": 139136,
-      "delta": 617,
-      "desc_en": "利用 AI 大模型和自动化工作流，根据主题或关键词一键生成高清短视频。Generate HD short videos from a topic or keyword with an automated AI workflow.",
-      "streak": 0
     },
     {
       "owner": "garrytan",
       "repo": "gstack",
       "lang": "TypeScript",
-      "stars": 139412,
-      "delta": 290,
+      "stars": 140024,
+      "delta": 612,
       "desc_en": "Use Garry Tan's exact Claude Code setup: 23 opinionated tools that serve as CEO, Designer, Eng Manager, Release Manager, Doc Engineer, and QA",
       "streak": 0
     },
     {
-      "owner": "FareedKhan-dev",
-      "repo": "kimi-k3-in-c",
-      "lang": "C",
-      "stars": 10390,
-      "delta": 351,
-      "desc_en": "A 2.78-trillion-parameter Kimi K3 running inference on a single CPU in 8.24 GB of RAM. Portable C99: no BLAS, no framework, no GPU.",
-      "streak": 0
-    },
-    {
-      "owner": "JiaFeiMiao-K-Cat",
-      "repo": "DiscImageStudio",
-      "lang": "C#",
-      "stars": 6709,
-      "delta": 1778,
-      "desc_en": "",
-      "streak": 0
-    },
-    {
-      "owner": "MichaelCade",
-      "repo": "90DaysOfDevOps",
-      "lang": "Shell",
-      "stars": 30505,
-      "delta": 97,
-      "desc_en": "This repository started out as a learning in public project for myself and has now become a structured learning map for many in the community. We have 3 years under our belt covering all things DevOps, including Principles, Processes, Tooling and Use Cases surrounding this vast topic.",
-      "streak": 0
+      "owner": "Usagi-org",
+      "repo": "ai-goofish-monitor",
+      "lang": "Python",
+      "stars": 17732,
+      "delta": 240,
+      "desc_en": "基于 Playwright 和AI实现的闲鱼多任务实时/定时监控与智能分析系统，配备了功能完善的后台管理UI。帮助用户从闲鱼海量商品中，找到心仪产品。",
+      "streak": 1
     },
     {
       "owner": "D4Vinci",
       "repo": "Scrapling",
       "lang": "Python",
-      "stars": 96756,
-      "delta": 2005,
+      "stars": 98139,
+      "delta": 1655,
       "desc_en": "🕷️ The BEST Web Scraping framework that handles everything from a single request to a full-scale crawl! Don't be shy, join here: https://discord.gg/EMgGbDceNQ and follow here for daily tips and tricks: https://x.com/Scrapling_dev",
       "streak": 0
     },
     {
-      "owner": "Thysrael",
-      "repo": "Horizon",
+      "owner": "vercel-labs",
+      "repo": "agent-desktop",
+      "lang": "Rust",
+      "stars": 17065,
+      "delta": 2173,
+      "desc_en": "Computer use CLI for AI agents",
+      "streak": 2
+    },
+    {
+      "owner": "max-sixty",
+      "repo": "worktrunk",
+      "lang": "Rust",
+      "stars": 11575,
+      "delta": 546,
+      "desc_en": "Worktrunk is a CLI for Git worktree management, designed for parallel AI agent workflows",
+      "streak": 2
+    },
+    {
+      "owner": "lz4",
+      "repo": "lz4",
+      "lang": "C",
+      "stars": 12409,
+      "delta": 23,
+      "desc_en": "Extremely Fast Compression algorithm",
+      "streak": 0
+    },
+    {
+      "owner": "google",
+      "repo": "skills",
       "lang": "Python",
-      "stars": 12596,
-      "delta": 121,
-      "desc_en": "📡 Your own AI-powered news radar. Generates daily briefings in English & Chinese. | 用 AI 构建你专属的新闻雷达",
+      "stars": 22437,
+      "delta": 211,
+      "desc_en": "Agent Skills for Google products and technologies",
+      "streak": 0
+    },
+    {
+      "owner": "vercel-labs",
+      "repo": "agent-browser",
+      "lang": "Rust",
+      "stars": 45981,
+      "delta": 150,
+      "desc_en": "Browser automation CLI for AI agents",
       "streak": 0
     },
     {
       "owner": "scenario-labs",
       "repo": "skills",
       "lang": "Python",
-      "stars": 2516,
-      "delta": 224,
+      "stars": 3138,
+      "delta": 667,
       "desc_en": "Get production-ready images, video, audio, and 3D from any AI agent: skills that pick the right model, price before spending, and keep characters and brands consistent through the Scenario MCP, plus expert teams that drive Blender, Maya, ZBrush, Unreal, and Unity.",
+      "streak": 0
+    },
+    {
+      "owner": "ConardLi",
+      "repo": "garden-skills",
+      "lang": "JavaScript",
+      "stars": 14206,
+      "delta": 175,
+      "desc_en": "ConardLi's open-source Skills collection, featuring web design, knowledge retrieval, image generation, and more.",
+      "streak": 0
+    },
+    {
+      "owner": "microsoft",
+      "repo": "VibeVoice",
+      "lang": "Python",
+      "stars": 56067,
+      "delta": 223,
+      "desc_en": "Open-Source Frontier Voice AI",
+      "streak": 0
+    },
+    {
+      "owner": "floci-io",
+      "repo": "floci",
+      "lang": "Java",
+      "stars": 30489,
+      "delta": 779,
+      "desc_en": "Light, fluffy, and always free - The AWS Local Emulator alternative",
+      "streak": 0
+    },
+    {
+      "owner": "JiaFeiMiao-K-Cat",
+      "repo": "DiscImageStudio",
+      "lang": "C#",
+      "stars": 7363,
+      "delta": 984,
+      "desc_en": "",
       "streak": 0
     }
   ],
@@ -174,8 +165,8 @@
       "owner": "thedotmack",
       "repo": "claude-mem",
       "lang": "TypeScript",
-      "stars": 112965,
-      "delta": 8822,
+      "stars": 113609,
+      "delta": 9318,
       "desc_en": "Persistent Context Across Sessions for Every Agent – Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More",
       "streak": 10
     },
@@ -183,8 +174,8 @@
       "owner": "Nutlope",
       "repo": "hallmark",
       "lang": "CSS",
-      "stars": 48053,
-      "delta": 7622,
+      "stars": 48867,
+      "delta": 6994,
       "desc_en": "Anti-AI-slop design skill for Claude Code, Cursor, and Codex.",
       "streak": 7
     },
@@ -192,108 +183,126 @@
       "owner": "pingdotgg",
       "repo": "t3code",
       "lang": "TypeScript",
-      "stars": 46793,
-      "delta": 14580,
+      "stars": 48485,
+      "delta": 16235,
       "desc_en": "",
       "streak": 6
-    },
-    {
-      "owner": "pbakaus",
-      "repo": "impeccable",
-      "lang": "Rust",
-      "stars": 102962,
-      "delta": 10921,
-      "desc_en": "The design vocabulary for your coding agent. Steer with polish and bolder, review with critique and audit, catch AI slop before it ships.",
-      "streak": 10
-    },
-    {
-      "owner": "obra",
-      "repo": "superpowers",
-      "lang": "Shell",
-      "stars": 312517,
-      "delta": 5565,
-      "desc_en": "An agentic skills framework & software development methodology that works.",
-      "streak": 8
     },
     {
       "owner": "anthropics",
       "repo": "skills",
       "lang": "Python",
-      "stars": 187458,
-      "delta": 3003,
+      "stars": 187804,
+      "delta": 3072,
       "desc_en": "Public repository for Agent Skills",
+      "streak": 3
+    },
+    {
+      "owner": "HKUDS",
+      "repo": "DeepTutor",
+      "lang": "Python",
+      "stars": 55528,
+      "delta": 6229,
+      "desc_en": "DeepTutor: Lifelong Personalized Tutoring. https://deeptutor.info/.",
       "streak": 3
     },
     {
       "owner": "max-sixty",
       "repo": "worktrunk",
       "lang": "Rust",
-      "stars": 11109,
-      "delta": 1261,
+      "stars": 11575,
+      "delta": 1802,
       "desc_en": "Worktrunk is a CLI for Git worktree management, designed for parallel AI agent workflows",
       "streak": 2
+    },
+    {
+      "owner": "milind-soni",
+      "repo": "OpenMausBot",
+      "lang": "TypeScript",
+      "stars": 13589,
+      "delta": 5580,
+      "desc_en": "Open-source Grok Bot alternative with a virtual machine that bots can use",
+      "streak": 2
+    },
+    {
+      "owner": "obra",
+      "repo": "superpowers",
+      "lang": "Shell",
+      "stars": 313081,
+      "delta": 5131,
+      "desc_en": "An agentic skills framework & software development methodology that works.",
+      "streak": 8
+    },
+    {
+      "owner": "pbakaus",
+      "repo": "impeccable",
+      "lang": "Rust",
+      "stars": 104047,
+      "delta": 9303,
+      "desc_en": "The design vocabulary for your coding agent. Steer with polish and bolder, review with critique and audit, catch AI slop before it ships.",
+      "streak": 10
+    },
+    {
+      "owner": "hyprwm",
+      "repo": "Hyprland",
+      "lang": "C++",
+      "stars": 40376,
+      "delta": 1371,
+      "desc_en": "Hyprland is an independent, highly customizable, dynamic tiling Wayland compositor that doesn't sacrifice on its looks.",
+      "streak": 0
     },
     {
       "owner": "jakubkrehel",
       "repo": "skills",
       "lang": "Markdown",
-      "stars": 10837,
-      "delta": 1865,
+      "stars": 11061,
+      "delta": 1840,
       "desc_en": "A collection of agent skills that help you build great interfaces.",
       "streak": 5
     },
     {
-      "owner": "JetBrains",
-      "repo": "thinkrail",
-      "lang": "TypeScript",
-      "stars": 7635,
-      "delta": 3031,
-      "desc_en": "Vibe code with pi in a lightweight, real IDE that customises itself around the way you work — The Vibe You Need",
-      "streak": 8
-    },
-    {
-      "owner": "ghostty-org",
-      "repo": "ghostty",
-      "lang": "Zig",
-      "stars": 63561,
-      "delta": 738,
-      "desc_en": "👻 Ghostty is a fast, feature-rich, and cross-platform terminal emulator that uses platform-native UI and GPU acceleration.",
+      "owner": "calesthio",
+      "repo": "OpenMontage",
+      "lang": "Python",
+      "stars": 77249,
+      "delta": 4132,
+      "desc_en": "World's first open-source, agentic video production system. 12 production pipelines, 100+ tools, 700+ agent skill and production-knowledge files. Turn your AI coding assistant into a full video production studio.",
       "streak": 0
     },
     {
       "owner": "multica-ai",
       "repo": "andrej-karpathy-skills",
       "lang": "-",
-      "stars": 229547,
-      "delta": 3808,
+      "stars": 229917,
+      "delta": 3713,
       "desc_en": "A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfalls.",
       "streak": 8
     },
     {
-      "owner": "hyprwm",
-      "repo": "Hyprland",
-      "lang": "C++",
-      "stars": 40309,
-      "delta": 1325,
-      "desc_en": "Hyprland is an independent, highly customizable, dynamic tiling Wayland compositor that doesn't sacrifice on its looks.",
+      "owner": "ghostty-org",
+      "repo": "ghostty",
+      "lang": "Zig",
+      "stars": 63660,
+      "delta": 726,
+      "desc_en": "👻 Ghostty is a fast, feature-rich, and cross-platform terminal emulator that uses platform-native UI and GPU acceleration.",
       "streak": 0
     },
     {
-      "owner": "AgriciDaniel",
-      "repo": "claude-seo",
-      "lang": "Python",
-      "stars": 26701,
-      "delta": 3531,
-      "desc_en": "Universal SEO skill for Claude Code. 26 sub-skills + 19 sub-agents covering technical SEO, E-E-A-T, schema, GEO/AEO, agent readiness (Lighthouse Agentic Browsing, WebMCP, llms.txt), backlinks, local SEO, e-commerce, international SEO, Google APIs, and PDF/Excel reporting. 9 optional extensions for live SEO data.",
-      "streak": 8
+      "owner": "Leonxlnx",
+      "repo": "taste-skill",
+      "lang": "JavaScript",
+      "stars": 110751,
+      "delta": 5426,
+      "desc_en": "Agent skills that give coding agents taste: art direction, reference images and a browser check instead of generic AI pages",
+      "streak": 4
     },
     {
-      "owner": "calesthio",
-      "repo": "OpenMontage",
+      "owner": "The-PR-Agent",
+      "repo": "pr-agent",
       "lang": "Python",
-      "stars": 76607,
-      "delta": 3743,
-      "desc_en": "World's first open-source, agentic video production system. 12 production pipelines, 100+ tools, 700+ agent skill and production-knowledge files. Turn your AI coding assistant into a full video production studio.",
+      "stars": 15115,
+      "delta": 1355,
+      "desc_en": "🚀 PR Agent: The Original Open-Source PR Reviewer. This project is not the Qodo free tier.",
       "streak": 0
     }
   ]
