@@ -1,5 +1,5 @@
 {
-  "date": "2026-11-12",
+  "date": "2026-11-13",
   "prev": [
     "2026-10-02",
     "2026-10-07",
@@ -27,216 +27,226 @@
     "2026-11-08",
     "2026-11-09",
     "2026-11-10",
-    "2026-11-11"
+    "2026-11-11",
+    "2026-11-12"
   ],
   "daily": [
-    {
-      "owner": "meta",
-      "repo": "astryx",
-      "lang": "TypeScript",
-      "stars": 25033,
-      "delta": 2776,
-      "desc_en": "An open source design system that's fully customizable and agent ready",
-      "streak": 0
-    },
-    {
-      "owner": "ZhuLinsen",
-      "repo": "daily_stock_analysis",
-      "lang": "Python",
-      "stars": 70281,
-      "delta": 278,
-      "desc_en": "LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。 LLM-powered multi-market stock analysis system with multi-source market data, real-time news, decision dashboard, automated notifications, and cost-free scheduled runs.",
-      "streak": 1
-    },
     {
       "owner": "GoogleChrome",
       "repo": "modern-web-guidance-src",
       "lang": "TypeScript",
-      "stars": 1776,
-      "delta": 159,
-      "desc_en": "",
+      "stars": 2872,
+      "delta": 739,
+      "desc_en": "Keep your coding agent up to date with the latest web best practices",
       "streak": 0
     },
     {
-      "owner": "shadcn",
-      "repo": "improve",
-      "lang": "-",
-      "stars": 10904,
-      "delta": 361,
-      "desc_en": "Use your most capable model to audit your codebase and write plans for cheaper models to execute.",
+      "owner": "openai",
+      "repo": "codex-security",
+      "lang": "TypeScript",
+      "stars": 12399,
+      "delta": 643,
+      "desc_en": "OpenAI's Codex Security CLI and TypeScript SDK for finding, validating, and fixing security vulnerabilities. npm: https://www.npmjs.com/package/@openai/codex-security",
+      "streak": 1
+    },
+    {
+      "owner": "nvm-sh",
+      "repo": "nvm",
+      "lang": "Shell",
+      "stars": 96005,
+      "delta": 63,
+      "desc_en": "Node Version Manager - POSIX-compliant bash script to manage multiple active node.js versions.",
+      "streak": 0
+    },
+    {
+      "owner": "pookjw",
+      "repo": "HermesEnabler",
+      "lang": "Objective-C",
+      "stars": 1521,
+      "delta": 218,
+      "desc_en": "Enable Hermès Watch Faces on any Apple Watch devices",
+      "streak": 0
+    },
+    {
+      "owner": "we-promise",
+      "repo": "sure",
+      "lang": "Ruby",
+      "stars": 13890,
+      "delta": 967,
+      "desc_en": "The personal finance app for everyone (by everyone)",
+      "streak": 0
+    },
+    {
+      "owner": "QwenLM",
+      "repo": "qwen-code",
+      "lang": "TypeScript",
+      "stars": 29788,
+      "delta": 151,
+      "desc_en": "An open-source AI coding agent that lives in your terminal.",
+      "streak": 0
+    },
+    {
+      "owner": "ashhart",
+      "repo": "TensorFold",
+      "lang": "Zig",
+      "stars": 1928,
+      "delta": 54,
+      "desc_en": "LLM Inference Engine for Metal, CUDA and Vulkan.",
+      "streak": 0
+    },
+    {
+      "owner": "nodejs",
+      "repo": "node",
+      "lang": "JavaScript",
+      "stars": 123593,
+      "delta": 62,
+      "desc_en": "Node.js JavaScript runtime ✨🐢🚀✨",
       "streak": 0
     },
     {
       "owner": "addyosmani",
       "repo": "agent-skills",
       "lang": "JavaScript",
-      "stars": 115969,
-      "delta": 787,
+      "stars": 116657,
+      "delta": 816,
       "desc_en": "Production-grade engineering skills for AI coding agents.",
-      "streak": 2
+      "streak": 3
     },
     {
-      "owner": "vercel-labs",
-      "repo": "agent-browser",
-      "lang": "Rust",
-      "stars": 49884,
-      "delta": 708,
-      "desc_en": "Browser automation CLI for AI agents",
-      "streak": 5
-    },
-    {
-      "owner": "we-promise",
-      "repo": "sure",
-      "lang": "Ruby",
-      "stars": 12985,
-      "delta": 1078,
-      "desc_en": "The personal finance app for everyone (by everyone)",
-      "streak": 0
-    },
-    {
-      "owner": "homeassistant-ai",
-      "repo": "ha-mcp",
-      "lang": "Python",
-      "stars": 7386,
-      "delta": 645,
-      "desc_en": "Configure and automate Home Assistant with Claude, ChatGPT, and other AI assistants.",
-      "streak": 2
-    },
-    {
-      "owner": "openai",
-      "repo": "codex-security",
+      "owner": "meta",
+      "repo": "astryx",
       "lang": "TypeScript",
-      "stars": 11756,
-      "delta": 52,
-      "desc_en": "OpenAI's Codex Security CLI and TypeScript SDK for finding, validating, and fixing security vulnerabilities. npm: https://www.npmjs.com/package/@openai/codex-security",
+      "stars": 26496,
+      "delta": 1830,
+      "desc_en": "An open source design system that's fully customizable and agent ready",
       "streak": 0
     },
     {
-      "owner": "TheAlgorithms",
-      "repo": "Java",
-      "lang": "Java",
-      "stars": 67035,
-      "delta": 51,
-      "desc_en": "All Algorithms implemented in Java",
+      "owner": "CopilotKit",
+      "repo": "OpenBot",
+      "lang": "TypeScript",
+      "stars": 11582,
+      "delta": 298,
+      "desc_en": "Open-source AI coworkers that each get a computer of their own: a browser, files and tools, with every action decided before it happens and recorded after. Bring any AG-UI agent.",
+      "streak": 2
+    },
+    {
+      "owner": "Alishahryar1",
+      "repo": "free-claude-code",
+      "lang": "Python",
+      "stars": 69270,
+      "delta": 415,
+      "desc_en": "Use Claude Code, Codex, Antigravity, VSCode, Pi, and OpenCode (and 6 other harnesses) for free (1.3B+ free tokens) from your terminal, app, IDE, or phone, and now from the browser with native browser sessions (multi-harness + multi-model) like OpenClaw (voice supported + ToS friendly)",
+      "streak": 1
+    },
+    {
+      "owner": "ggml-org",
+      "repo": "llama.cpp",
+      "lang": "C++",
+      "stars": 134539,
+      "delta": 176,
+      "desc_en": "LLM inference in C/C++",
       "streak": 0
     }
   ],
   "weekly": [
     {
-      "owner": "NVIDIA",
-      "repo": "auto-ontology",
-      "lang": "Python",
-      "stars": 11851,
-      "delta": 7947,
-      "desc_en": "Auto Ontology is a Python framework for building semantic, graph-based reasoning layers over data. It enables deterministic query generation, better context retrieval, and more explainable AI for LLM and agent workflows.",
-      "streak": 5
-    },
-    {
       "owner": "anthropics",
       "repo": "skills",
       "lang": "Python",
-      "stars": 193155,
-      "delta": 5738,
+      "stars": 193694,
+      "delta": 6055,
       "desc_en": "Public repository for Agent Skills",
-      "streak": 9
-    },
-    {
-      "owner": "vercel-labs",
-      "repo": "agent-desktop",
-      "lang": "Rust",
-      "stars": 22097,
-      "delta": 7772,
-      "desc_en": "Computer use CLI for AI agents",
-      "streak": 5
+      "streak": 10
     },
     {
       "owner": "milind-soni",
       "repo": "OpenMausBot",
       "lang": "TypeScript",
-      "stars": 21249,
-      "delta": 9257,
+      "stars": 21702,
+      "delta": 9104,
       "desc_en": "Open-source Grok Bot alternative with a virtual machine that bots can use",
-      "streak": 8
+      "streak": 9
     },
     {
       "owner": "vercel-labs",
       "repo": "agent-browser",
       "lang": "Rust",
-      "stars": 49884,
-      "delta": 4183,
+      "stars": 50323,
+      "delta": 4601,
       "desc_en": "Browser automation CLI for AI agents",
-      "streak": 5
+      "streak": 6
+    },
+    {
+      "owner": "NVIDIA",
+      "repo": "auto-ontology",
+      "lang": "Python",
+      "stars": 12232,
+      "delta": 5802,
+      "desc_en": "Auto Ontology is a Python framework for building semantic, graph-based reasoning layers over data. It enables deterministic query generation, better context retrieval, and more explainable AI for LLM and agent workflows.",
+      "streak": 6
     },
     {
       "owner": "cloudflare",
       "repo": "security-audit-skill",
       "lang": "JavaScript",
-      "stars": 70387,
-      "delta": 11507,
+      "stars": 71199,
+      "delta": 10700,
       "desc_en": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
-      "streak": 16
+      "streak": 17
+    },
+    {
+      "owner": "vercel-labs",
+      "repo": "agent-desktop",
+      "lang": "Rust",
+      "stars": 22699,
+      "delta": 6414,
+      "desc_en": "Computer use CLI for AI agents",
+      "streak": 6
     },
     {
       "owner": "mattpocock",
       "repo": "skills",
       "lang": "Shell",
-      "stars": 322056,
-      "delta": 9575,
+      "stars": 322999,
+      "delta": 8731,
       "desc_en": "Skills for Real Engineers. Straight from my .agents directory.",
-      "streak": 16
-    },
-    {
-      "owner": "D4Vinci",
-      "repo": "Scrapling",
-      "lang": "Python",
-      "stars": 101659,
-      "delta": 5814,
-      "desc_en": "🕷️ The BEST Web Scraping framework that handles everything from a single request to a full-scale crawl! Don't be shy, join here: https://discord.gg/EMgGbDceNQ and follow here for daily tips and tricks: https://x.com/Scrapling_dev",
-      "streak": 0
+      "streak": 17
     },
     {
       "owner": "zed-industries",
       "repo": "zed",
       "lang": "Rust",
-      "stars": 94718,
-      "delta": 2310,
+      "stars": 94840,
+      "delta": 2339,
       "desc_en": "Code at the speed of thought – Zed is a high-performance, multiplayer code editor from the creators of Atom and Tree-sitter.",
       "streak": 0
-    },
-    {
-      "owner": "Donchitos",
-      "repo": "Claude-Code-Game-Studios",
-      "lang": "Shell",
-      "stars": 38483,
-      "delta": 3150,
-      "desc_en": "Turn Claude Code into a full game dev studio — 49 AI agents, 72 workflow skills, and a complete coordination system mirroring real studio hierarchy.",
-      "streak": 9
-    },
-    {
-      "owner": "google",
-      "repo": "skills",
-      "lang": "Python",
-      "stars": 23943,
-      "delta": 2013,
-      "desc_en": "Agent Skills for Google products and technologies",
-      "streak": 3
     },
     {
       "owner": "google-deepmind",
       "repo": "mujoco",
       "lang": "C++",
-      "stars": 17646,
-      "delta": 1535,
+      "stars": 17761,
+      "delta": 1671,
       "desc_en": "Multi-Joint dynamics with Contact. A general purpose physics simulator.",
       "streak": 0
     },
     {
-      "owner": "herdrdev",
-      "repo": "herdr",
-      "lang": "Rust",
-      "stars": 50342,
-      "delta": 2213,
-      "desc_en": "the runtime your coding agents live on",
+      "owner": "google",
+      "repo": "skills",
+      "lang": "Python",
+      "stars": 24062,
+      "delta": 1933,
+      "desc_en": "Agent Skills for Google products and technologies",
+      "streak": 4
+    },
+    {
+      "owner": "D4Vinci",
+      "repo": "Scrapling",
+      "lang": "Python",
+      "stars": 102125,
+      "delta": 4743,
+      "desc_en": "🕷️ The BEST Web Scraping framework that handles everything from a single request to a full-scale crawl! Don't be shy, join here: https://discord.gg/EMgGbDceNQ and follow here for daily tips and tricks: https://x.com/Scrapling_dev",
       "streak": 0
     }
   ]
