@@ -1,5 +1,5 @@
 {
-  "date": "2026-11-13",
+  "date": "2026-11-14",
   "prev": [
     "2026-10-02",
     "2026-10-07",
@@ -28,225 +28,253 @@
     "2026-11-09",
     "2026-11-10",
     "2026-11-11",
-    "2026-11-12"
+    "2026-11-12",
+    "2026-11-13"
   ],
   "daily": [
+    {
+      "owner": "alibaba",
+      "repo": "open-code-review",
+      "lang": "Go",
+      "stars": 50603,
+      "delta": 215,
+      "desc_en": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
+      "streak": 0
+    },
     {
       "owner": "GoogleChrome",
       "repo": "modern-web-guidance-src",
       "lang": "TypeScript",
-      "stars": 2872,
-      "delta": 739,
+      "stars": 4820,
+      "delta": 1925,
       "desc_en": "Keep your coding agent up to date with the latest web best practices",
-      "streak": 0
+      "streak": 1
     },
     {
       "owner": "openai",
       "repo": "codex-security",
       "lang": "TypeScript",
-      "stars": 12399,
-      "delta": 643,
+      "stars": 13122,
+      "delta": 751,
       "desc_en": "OpenAI's Codex Security CLI and TypeScript SDK for finding, validating, and fixing security vulnerabilities. npm: https://www.npmjs.com/package/@openai/codex-security",
-      "streak": 1
+      "streak": 2
     },
     {
-      "owner": "nvm-sh",
-      "repo": "nvm",
-      "lang": "Shell",
-      "stars": 96005,
-      "delta": 63,
-      "desc_en": "Node Version Manager - POSIX-compliant bash script to manage multiple active node.js versions.",
-      "streak": 0
-    },
-    {
-      "owner": "pookjw",
-      "repo": "HermesEnabler",
-      "lang": "Objective-C",
-      "stars": 1521,
-      "delta": 218,
-      "desc_en": "Enable Hermès Watch Faces on any Apple Watch devices",
-      "streak": 0
+      "owner": "ZhuLinsen",
+      "repo": "daily_stock_analysis",
+      "lang": "Python",
+      "stars": 71577,
+      "delta": 256,
+      "desc_en": "LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。 LLM-powered multi-market stock analysis system with multi-source market data, real-time news, decision dashboard, automated notifications, and cost-free scheduled runs.",
+      "streak": 2
     },
     {
       "owner": "we-promise",
       "repo": "sure",
       "lang": "Ruby",
-      "stars": 13890,
-      "delta": 967,
+      "stars": 14730,
+      "delta": 925,
       "desc_en": "The personal finance app for everyone (by everyone)",
       "streak": 0
     },
     {
-      "owner": "QwenLM",
-      "repo": "qwen-code",
+      "owner": "backnotprop",
+      "repo": "plannotator",
       "lang": "TypeScript",
-      "stars": 29788,
-      "delta": 151,
-      "desc_en": "An open-source AI coding agent that lives in your terminal.",
+      "stars": 10445,
+      "delta": 108,
+      "desc_en": "The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share with team, and send all feedback to agents with one click.",
       "streak": 0
     },
     {
-      "owner": "ashhart",
-      "repo": "TensorFold",
-      "lang": "Zig",
-      "stars": 1928,
-      "delta": 54,
-      "desc_en": "LLM Inference Engine for Metal, CUDA and Vulkan.",
-      "streak": 0
-    },
-    {
-      "owner": "nodejs",
-      "repo": "node",
+      "owner": "louislam",
+      "repo": "uptime-kuma",
       "lang": "JavaScript",
-      "stars": 123593,
-      "delta": 62,
-      "desc_en": "Node.js JavaScript runtime ✨🐢🚀✨",
+      "stars": 93854,
+      "delta": 71,
+      "desc_en": "A fancy self-hosted monitoring tool",
       "streak": 0
     },
     {
-      "owner": "addyosmani",
-      "repo": "agent-skills",
-      "lang": "JavaScript",
-      "stars": 116657,
-      "delta": 816,
-      "desc_en": "Production-grade engineering skills for AI coding agents.",
-      "streak": 3
-    },
-    {
-      "owner": "meta",
-      "repo": "astryx",
-      "lang": "TypeScript",
-      "stars": 26496,
-      "delta": 1830,
-      "desc_en": "An open source design system that's fully customizable and agent ready",
+      "owner": "block",
+      "repo": "buzz",
+      "lang": "Rust",
+      "stars": 37297,
+      "delta": 97,
+      "desc_en": "A hive mind communication platform",
       "streak": 0
     },
     {
-      "owner": "CopilotKit",
-      "repo": "OpenBot",
-      "lang": "TypeScript",
-      "stars": 11582,
-      "delta": 298,
-      "desc_en": "Open-source AI coworkers that each get a computer of their own: a browser, files and tools, with every action decided before it happens and recorded after. Bring any AG-UI agent.",
-      "streak": 2
-    },
-    {
-      "owner": "Alishahryar1",
-      "repo": "free-claude-code",
+      "owner": "tradermonty",
+      "repo": "claude-trading-skills",
       "lang": "Python",
-      "stars": 69270,
-      "delta": 415,
-      "desc_en": "Use Claude Code, Codex, Antigravity, VSCode, Pi, and OpenCode (and 6 other harnesses) for free (1.3B+ free tokens) from your terminal, app, IDE, or phone, and now from the browser with native browser sessions (multi-harness + multi-model) like OpenClaw (voice supported + ToS friendly)",
-      "streak": 1
+      "stars": 4154,
+      "delta": 69,
+      "desc_en": "Claude Code skills for equity investors and traders — market analysis, technical charting, economic calendars, screeners, and trading strategy development.",
+      "streak": 0
     },
     {
-      "owner": "ggml-org",
-      "repo": "llama.cpp",
+      "owner": "tailscale",
+      "repo": "tailcat",
+      "lang": "Go",
+      "stars": 9447,
+      "delta": 256,
+      "desc_en": "like netcat, but over Tailscale's data plane, without Tailscale's control plane",
+      "streak": 0
+    },
+    {
+      "owner": "Likely7",
+      "repo": "Veyra-NRVideo",
       "lang": "C++",
-      "stars": 134539,
-      "delta": 176,
-      "desc_en": "LLM inference in C/C++",
+      "stars": 1615,
+      "delta": 256,
+      "desc_en": "Bring PS5 GTA6 to 120FPS with DLSS 5. An advanced Windows video player and capture enhancement tool featuring real-time preview for videos, images, and capture card sources. Combine AI-powered Super Resolution, DLSS5 image enhancement, and Frame Generation to deliver a next-generation visual experience.",
+      "streak": 0
+    },
+    {
+      "owner": "ChromeDevTools",
+      "repo": "chrome-devtools-mcp",
+      "lang": "TypeScript",
+      "stars": 55444,
+      "delta": 67,
+      "desc_en": "Chrome DevTools for coding agents",
       "streak": 0
     }
   ],
   "weekly": [
     {
+      "owner": "sherlock-project",
+      "repo": "sherlock",
+      "lang": "Python",
+      "stars": 111123,
+      "delta": 13364,
+      "desc_en": "Hunt down social media accounts by username across social networks",
+      "streak": 0
+    },
+    {
       "owner": "anthropics",
       "repo": "skills",
       "lang": "Python",
-      "stars": 193694,
-      "delta": 6055,
+      "stars": 194135,
+      "delta": 6169,
       "desc_en": "Public repository for Agent Skills",
-      "streak": 10
+      "streak": 11
     },
     {
       "owner": "milind-soni",
       "repo": "OpenMausBot",
       "lang": "TypeScript",
-      "stars": 21702,
-      "delta": 9104,
+      "stars": 22179,
+      "delta": 7763,
       "desc_en": "Open-source Grok Bot alternative with a virtual machine that bots can use",
-      "streak": 9
+      "streak": 10
     },
     {
       "owner": "vercel-labs",
       "repo": "agent-browser",
       "lang": "Rust",
-      "stars": 50323,
-      "delta": 4601,
+      "stars": 50713,
+      "delta": 4360,
       "desc_en": "Browser automation CLI for AI agents",
-      "streak": 6
+      "streak": 7
+    },
+    {
+      "owner": "google",
+      "repo": "elephant-goldfish-model",
+      "lang": "Python",
+      "stars": 18614,
+      "delta": 5560,
+      "desc_en": "Open-source plugin for designing and reviewing software with agents",
+      "streak": 0
+    },
+    {
+      "owner": "ZhuLinsen",
+      "repo": "daily_stock_analysis",
+      "lang": "Python",
+      "stars": 71577,
+      "delta": 3778,
+      "desc_en": "LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。 LLM-powered multi-market stock analysis system with multi-source market data, real-time news, decision dashboard, automated notifications, and cost-free scheduled runs.",
+      "streak": 2
     },
     {
       "owner": "NVIDIA",
       "repo": "auto-ontology",
       "lang": "Python",
-      "stars": 12232,
-      "delta": 5802,
+      "stars": 12549,
+      "delta": 4108,
       "desc_en": "Auto Ontology is a Python framework for building semantic, graph-based reasoning layers over data. It enables deterministic query generation, better context retrieval, and more explainable AI for LLM and agent workflows.",
-      "streak": 6
-    },
-    {
-      "owner": "cloudflare",
-      "repo": "security-audit-skill",
-      "lang": "JavaScript",
-      "stars": 71199,
-      "delta": 10700,
-      "desc_en": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
-      "streak": 17
-    },
-    {
-      "owner": "vercel-labs",
-      "repo": "agent-desktop",
-      "lang": "Rust",
-      "stars": 22699,
-      "delta": 6414,
-      "desc_en": "Computer use CLI for AI agents",
-      "streak": 6
-    },
-    {
-      "owner": "mattpocock",
-      "repo": "skills",
-      "lang": "Shell",
-      "stars": 322999,
-      "delta": 8731,
-      "desc_en": "Skills for Real Engineers. Straight from my .agents directory.",
-      "streak": 17
-    },
-    {
-      "owner": "zed-industries",
-      "repo": "zed",
-      "lang": "Rust",
-      "stars": 94840,
-      "delta": 2339,
-      "desc_en": "Code at the speed of thought – Zed is a high-performance, multiplayer code editor from the creators of Atom and Tree-sitter.",
-      "streak": 0
+      "streak": 7
     },
     {
       "owner": "google-deepmind",
       "repo": "mujoco",
       "lang": "C++",
-      "stars": 17761,
-      "delta": 1671,
+      "stars": 17872,
+      "delta": 1764,
       "desc_en": "Multi-Joint dynamics with Contact. A general purpose physics simulator.",
       "streak": 0
     },
     {
-      "owner": "google",
+      "owner": "mattpocock",
       "repo": "skills",
-      "lang": "Python",
-      "stars": 24062,
-      "delta": 1933,
-      "desc_en": "Agent Skills for Google products and technologies",
+      "lang": "Shell",
+      "stars": 323815,
+      "delta": 7599,
+      "desc_en": "Skills for Real Engineers. Straight from my .agents directory.",
+      "streak": 18
+    },
+    {
+      "owner": "addyosmani",
+      "repo": "agent-skills",
+      "lang": "JavaScript",
+      "stars": 117138,
+      "delta": 3502,
+      "desc_en": "Production-grade engineering skills for AI coding agents.",
       "streak": 4
     },
     {
-      "owner": "D4Vinci",
-      "repo": "Scrapling",
+      "owner": "cloudflare",
+      "repo": "security-audit-skill",
+      "lang": "JavaScript",
+      "stars": 71917,
+      "delta": 8829,
+      "desc_en": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
+      "streak": 18
+    },
+    {
+      "owner": "zed-industries",
+      "repo": "zed",
+      "lang": "Rust",
+      "stars": 94959,
+      "delta": 2117,
+      "desc_en": "Code at the speed of thought – Zed is a high-performance, multiplayer code editor from the creators of Atom and Tree-sitter.",
+      "streak": 0
+    },
+    {
+      "owner": "anthropics",
+      "repo": "claude-quickstarts",
       "lang": "Python",
-      "stars": 102125,
-      "delta": 4743,
-      "desc_en": "🕷️ The BEST Web Scraping framework that handles everything from a single request to a full-scale crawl! Don't be shy, join here: https://discord.gg/EMgGbDceNQ and follow here for daily tips and tricks: https://x.com/Scrapling_dev",
+      "stars": 20868,
+      "delta": 1731,
+      "desc_en": "A collection of projects designed to help developers quickly get started with building deployable applications using the Claude API",
+      "streak": 3
+    },
+    {
+      "owner": "vercel-labs",
+      "repo": "agent-desktop",
+      "lang": "Rust",
+      "stars": 23284,
+      "delta": 5408,
+      "desc_en": "Computer use CLI for AI agents",
+      "streak": 7
+    },
+    {
+      "owner": "lobehub",
+      "repo": "lobehub",
+      "lang": "TypeScript",
+      "stars": 85391,
+      "delta": 1126,
+      "desc_en": "🤯 LobeHub - Super-Agents on Your Team. Add super-agents to the chats your team already uses.They take on work by themselves and get better every week.",
       "streak": 0
     }
   ]
