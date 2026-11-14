@@ -1,30 +1,27 @@
-# GitHub AI 트렌드 2026-11-13 (Daily)
+# GitHub AI 트렌드 2026-11-14 (Daily)
 
-Daily 트렌딩 13개 중 AI 관련 9개
+Daily 트렌딩 12개 중 AI 관련 6개
 
 ## 분석
 
-- 오늘 Daily AI 상승폭 1위는 meta/astryx(+1,830, 총 26,496★)로, 에이전트 친화적인 오픈소스 디자인 시스템이며 이어 addyosmani/agent-skills(+816), GoogleChrome/modern-web-guidance-src(+739), openai/codex-security(+643) 순이었습니다.
-- Daily AI 9개 중 5개가 처음 등장했습니다: GoogleChrome/modern-web-guidance-src(+739), meta/astryx(+1,830), QwenLM/qwen-code(+151), ashhart/TensorFold(+54), ggml-org/llama.cpp(+176).
-- addyosmani/agent-skills는 이전 리포트에 3번 등장해 Daily AI 중 가장 꾸준했고, CopilotKit/OpenBot(2회)과 openai/codex-security·Alishahryar1/free-claude-code(각 1회)도 다시 올라왔습니다.
-- 코딩 에이전트 관련 저장소가 다수를 차지했습니다: QwenLM/qwen-code(+151), free-claude-code(+415), agent-skills(+816), modern-web-guidance-src(+739) 등이 에이전트 스킬·하네스 흐름을 이었고, TensorFold(+54)와 llama.cpp(+176)는 LLM 추론 엔진으로 함께 올랐습니다.
+- 오늘 상승폭 1위는 openai/codex-security(+751, 총 13,122★, 2회째 등장)로, 보안 취약점 탐지·검증·수정 CLI가 Daily AI 6개 중 가장 크게 올랐습니다.
+- 새로 진입한(streak 0) Daily AI 저장소는 alibaba/open-code-review(+215), backnotprop/plannotator(+108), tradermonty/claude-trading-skills(+69), ChromeDevTools/chrome-devtools-mcp(+67) 4개입니다.
+- ZhuLinsen/daily_stock_analysis(+256, 총 71,577★)는 이전 리포트에 2번 등장한 뒤 오늘도 Daily에 올라 가장 많이 재등장한 저장소입니다.
+- 공통 주제는 에이전트 주변 도구로, 코드 리뷰(open-code-review), 보안(codex-security), 피드백 전달(plannotator), 브라우저 디버깅 MCP(chrome-devtools-mcp)가 함께 올랐습니다.
 
 ## Daily AI 저장소
 
-이전 등장: 이전 리포트(10-02 · 10-07 · 10-08 · 10-12 · 10-13 · 10-14 · 10-15 · 10-16 · 10-19 · 10-20 · 10-21 · 10-22 · 10-23 · 10-26 · 10-27 · 10-28 · 10-29 · 10-30 · 11-02 · 11-03 · 11-04 · 11-06 · 11-07 · 11-08 · 11-09 · 11-10 · 11-11 · 11-12)에 등장한 횟수
+이전 등장: 이전 리포트(10-02 · 10-07 · 10-08 · 10-12 · 10-13 · 10-14 · 10-15 · 10-16 · 10-19 · 10-20 · 10-21 · 10-22 · 10-23 · 10-26 · 10-27 · 10-28 · 10-29 · 10-30 · 11-02 · 11-03 · 11-04 · 11-06 · 11-07 · 11-08 · 11-09 · 11-10 · 11-11 · 11-12 · 11-13)에 등장한 횟수
 
 | 저장소 | 언어 | 전체 ★ | 오늘 ★ | 이전 등장 | 설명 |
 |---|---|---:|---:|---:|---|
-| [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) | JavaScript | 116,657 | +816 | 3 | AI 코딩 에이전트를 위한 실무급 엔지니어링 스킬 모음 |
-| [CopilotKit/OpenBot](https://github.com/CopilotKit/OpenBot) | TypeScript | 11,582 | +298 | 2 | 각자 전용 컴퓨터를 갖는 오픈소스 AI 동료 — 브라우저·파일·도구를 쓰고 모든 행동을 실행 전에 결정해 실행 후 기록하며 AG-UI 에이전트를 연결할 수 있음 |
-| [openai/codex-security](https://github.com/openai/codex-security) | TypeScript | 12,399 | +643 | 1 | OpenAI의 Codex Security CLI 및 TypeScript SDK — 보안 취약점을 찾고 검증하고 수정 |
-| [Alishahryar1/free-claude-code](https://github.com/Alishahryar1/free-claude-code) | Python | 69,270 | +415 | 1 | Claude Code, Codex, OpenCode 등 여러 하네스를 무료 토큰으로 터미널·IDE·휴대폰·브라우저에서 사용 — 멀티 하네스·멀티 모델 지원 |
-| [GoogleChrome/modern-web-guidance-src](https://github.com/GoogleChrome/modern-web-guidance-src) | TypeScript | 2,872 | +739 | 0 | 코딩 에이전트를 최신 웹 모범 사례에 맞춰 유지 — Chrome 팀이 공개한 웹 가이던스 소스 |
-| [QwenLM/qwen-code](https://github.com/QwenLM/qwen-code) | TypeScript | 29,788 | +151 | 0 | 터미널에서 동작하는 오픈소스 AI 코딩 에이전트 |
-| [ashhart/TensorFold](https://github.com/ashhart/TensorFold) | Zig | 1,928 | +54 | 0 | Metal, CUDA, Vulkan을 지원하는 LLM 추론 엔진 |
-| [meta/astryx](https://github.com/meta/astryx) | TypeScript | 26,496 | +1,830 | 0 | 완전히 커스터마이즈할 수 있고 에이전트 친화적인 오픈소스 디자인 시스템 |
-| [ggml-org/llama.cpp](https://github.com/ggml-org/llama.cpp) | C++ | 134,539 | +176 | 0 | C/C++로 구현한 LLM 추론 엔진 |
+| [openai/codex-security](https://github.com/openai/codex-security) | TypeScript | 13,122 | +751 | 2 | OpenAI의 Codex Security CLI 및 TypeScript SDK — 보안 취약점을 찾고 검증하고 수정 |
+| [ZhuLinsen/daily_stock_analysis](https://github.com/ZhuLinsen/daily_stock_analysis) | Python | 71,577 | +256 | 2 | LLM 기반 다중 시장 주식 분석 시스템 — 여러 출처의 시세·실시간 뉴스, 의사결정 대시보드, 자동 알림을 제공하며 비용 없이 정기 실행 가능 |
+| [alibaba/open-code-review](https://github.com/alibaba/open-code-review) | Go | 50,603 | +215 | 0 | 알리바바 규모에서 검증된 하이브리드 코드 리뷰 도구 — 결정적 파이프라인과 LLM 에이전트를 결합해 정확한 줄 단위 코멘트를 달고, 다국어 규칙셋(NPE·스레드 안전성·XSS·SQL 인젝션)과 OpenAI·Anthropic 호환을 지원 |
+| [backnotprop/plannotator](https://github.com/backnotprop/plannotator) | TypeScript | 10,445 | +108 | 0 | 에이전트를 계속 지켜보고 이끄는 작업 공간 — 계획·주석·코드 리뷰·팀 공유를 하고 모든 피드백을 클릭 한 번으로 에이전트에 전달 |
+| [tradermonty/claude-trading-skills](https://github.com/tradermonty/claude-trading-skills) | Python | 4,154 | +69 | 0 | 주식 투자자·트레이더를 위한 Claude Code 스킬 모음 — 시장 분석, 기술적 차트, 경제 캘린더, 스크리너, 매매 전략 개발 |
+| [ChromeDevTools/chrome-devtools-mcp](https://github.com/ChromeDevTools/chrome-devtools-mcp) | TypeScript | 55,444 | +67 | 0 | 코딩 에이전트를 위한 Chrome DevTools — MCP로 브라우저 디버깅·검사 기능을 에이전트에 제공 |
 
-제외(AI 아님): nvm-sh/nvm(Node 버전 관리자) · pookjw/HermesEnabler(Apple Watch 워치페이스 도구) · we-promise/sure(개인 재무 관리 앱) · nodejs/node(JavaScript 런타임)
+제외(AI 아님): GoogleChrome/modern-web-guidance-src(웹 개발 가이드 소스) · we-promise/sure(개인 재무 앱) · louislam/uptime-kuma(셀프호스팅 모니터링 도구) · block/buzz(팀 커뮤니케이션 플랫폼) · tailscale/tailcat(Tailscale용 netcat) · Likely7/Veyra-NRVideo(Windows 영상 플레이어)
 
-전체 리포트(Weekly 포함): [github_trending_2026-11-13.html](2026-11/html/github_trending_2026-11-13.html)
+전체 리포트(Weekly 포함): [github_trending_2026-11-14.html](2026-11/html/github_trending_2026-11-14.html)
