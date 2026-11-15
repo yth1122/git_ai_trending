@@ -1,5 +1,5 @@
 {
-  "date": "2026-11-15",
+  "date": "2026-11-16",
   "prev": [
     "2026-10-02",
     "2026-10-07",
@@ -30,24 +30,97 @@
     "2026-11-11",
     "2026-11-12",
     "2026-11-13",
-    "2026-11-14"
+    "2026-11-14",
+    "2026-11-15"
   ],
   "daily": [
+    {
+      "owner": "dream-num",
+      "repo": "univer",
+      "lang": "TypeScript",
+      "stars": 25577,
+      "delta": 1041,
+      "desc_en": "Build your own AI office with Univer Office SDK. Bring editing, calculation, collaboration, and file processing into your product for people and AI agents. Built on an extensible open-source core.",
+      "streak": 2
+    },
+    {
+      "owner": "ag-ui-protocol",
+      "repo": "ag-ui",
+      "lang": "TypeScript",
+      "stars": 17813,
+      "delta": 393,
+      "desc_en": "AG-UI: the Agent-User Interaction Protocol. Bring Agents into Frontend Applications.",
+      "streak": 1
+    },
+    {
+      "owner": "google-labs-code",
+      "repo": "stitch-skills",
+      "lang": "TypeScript",
+      "stars": 9265,
+      "delta": 248,
+      "desc_en": "A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, Gemini CLI, Claude Code, Cursor.",
+      "streak": 0
+    },
     {
       "owner": "backnotprop",
       "repo": "plannotator",
       "lang": "TypeScript",
-      "stars": 11079,
-      "delta": 412,
+      "stars": 11806,
+      "delta": 860,
       "desc_en": "The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share with team, and send all feedback to agents with one click.",
+      "streak": 2
+    },
+    {
+      "owner": "ChromeDevTools",
+      "repo": "chrome-devtools-mcp",
+      "lang": "TypeScript",
+      "stars": 56886,
+      "delta": 718,
+      "desc_en": "Chrome DevTools for coding agents",
+      "streak": 2
+    },
+    {
+      "owner": "alibaba",
+      "repo": "open-code-review",
+      "lang": "Go",
+      "stars": 52024,
+      "delta": 688,
+      "desc_en": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
+      "streak": 2
+    },
+    {
+      "owner": "Tencent",
+      "repo": "LoopForge",
+      "lang": "Go",
+      "stars": 1442,
+      "delta": 484,
+      "desc_en": "Self-hosted workflows for coding-agent delivery. Orchestrate CodeBuddy, Codex and Claude Code with scripts and human approval gates. Includes Local workflows for coding assistants.",
       "streak": 1
+    },
+    {
+      "owner": "ggml-org",
+      "repo": "ggml",
+      "lang": "C++",
+      "stars": 15893,
+      "delta": 53,
+      "desc_en": "Tensor library for machine learning",
+      "streak": 0
+    },
+    {
+      "owner": "elementalsouls",
+      "repo": "Claude-BugHunter",
+      "lang": "Python",
+      "stars": 6380,
+      "delta": 221,
+      "desc_en": "A Claude Code skill bundle for bug hunting and external red-team work - 82 skills, 15 slash commands, 681 disclosed-report patterns curated across 24 core vulnerability classes, plus enterprise identity + infrastructure attack matrices.",
+      "streak": 0
     },
     {
       "owner": "GoogleChrome",
       "repo": "modern-web-guidance-src",
       "lang": "TypeScript",
-      "stars": 5955,
-      "delta": 1225,
+      "stars": 7109,
+      "delta": 1220,
       "desc_en": "Keep your coding agent up to date with the latest web best practices",
       "streak": 1
     },
@@ -55,117 +128,18 @@
       "owner": "tradermonty",
       "repo": "claude-trading-skills",
       "lang": "Python",
-      "stars": 4762,
-      "delta": 556,
+      "stars": 5502,
+      "delta": 707,
       "desc_en": "Claude Code skills for equity investors and traders — market analysis, technical charting, economic calendars, screeners, and trading strategy development.",
-      "streak": 1
+      "streak": 2
     },
     {
-      "owner": "ChromeDevTools",
-      "repo": "chrome-devtools-mcp",
-      "lang": "TypeScript",
-      "stars": 56257,
-      "delta": 673,
-      "desc_en": "Chrome DevTools for coding agents",
-      "streak": 1
-    },
-    {
-      "owner": "alibaba",
-      "repo": "open-code-review",
-      "lang": "Go",
-      "stars": 51385,
-      "delta": 897,
-      "desc_en": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
-      "streak": 1
-    },
-    {
-      "owner": "QwenLM",
-      "repo": "qwen-code",
-      "lang": "TypeScript",
-      "stars": 30305,
-      "delta": 116,
-      "desc_en": "An open-source AI coding agent that lives in your terminal.",
-      "streak": 1
-    },
-    {
-      "owner": "dream-num",
-      "repo": "univer",
-      "lang": "TypeScript",
-      "stars": 24447,
-      "delta": 495,
-      "desc_en": "Build your own AI office with Univer Office SDK. Bring editing, calculation, collaboration, and file processing into your product for people and AI agents. Built on an extensible open-source core.",
-      "streak": 1
-    },
-    {
-      "owner": "ag-ui-protocol",
-      "repo": "ag-ui",
-      "lang": "TypeScript",
-      "stars": 17333,
-      "delta": 9,
-      "desc_en": "AG-UI: the Agent-User Interaction Protocol. Bring Agents into Frontend Applications.",
-      "streak": 0
-    },
-    {
-      "owner": "ashhart",
-      "repo": "TensorFold",
-      "lang": "Zig",
-      "stars": 2148,
-      "delta": 53,
-      "desc_en": "LLM Inference Engine for Metal, CUDA and Vulkan.",
-      "streak": 1
-    },
-    {
-      "owner": "JuliusBrussee",
-      "repo": "caveman",
-      "lang": "Go",
-      "stars": 120032,
-      "delta": 227,
-      "desc_en": "🪨 why use many token when few token do trick. Viral skill + proxy for coding agents that cuts 65% of tokens by talking like a caveman.",
-      "streak": 1
-    },
-    {
-      "owner": "louislam",
-      "repo": "uptime-kuma",
-      "lang": "JavaScript",
-      "stars": 94215,
-      "delta": 432,
-      "desc_en": "A fancy self-hosted monitoring tool",
-      "streak": 0
-    },
-    {
-      "owner": "we-promise",
-      "repo": "sure",
-      "lang": "Ruby",
-      "stars": 15266,
-      "delta": 659,
-      "desc_en": "The personal finance app for everyone (by everyone)",
-      "streak": 0
-    },
-    {
-      "owner": "Tencent",
-      "repo": "LoopForge",
-      "lang": "Go",
-      "stars": 867,
-      "delta": 101,
-      "desc_en": "Self-hosted workflows for coding-agent delivery. Orchestrate CodeBuddy, Codex and Claude Code with scripts and human approval gates. Includes Local workflows for coding assistants.",
-      "streak": 0
-    },
-    {
-      "owner": "Likely7",
-      "repo": "Veyra-NRVideo",
-      "lang": "C++",
-      "stars": 2192,
-      "delta": 423,
-      "desc_en": "Bring PS5 GTA6 to 120FPS with DLSS 5. An advanced Windows video player and capture enhancement tool featuring real-time preview for videos, images, and capture card sources. Combine AI-powered Super Resolution, DLSS5 image enhancement, and Frame Generation to deliver a next-generation visual experience.",
-      "streak": 0
-    },
-    {
-      "owner": "martin-olivier",
-      "repo": "airgorah",
-      "lang": "Rust",
-      "stars": 5817,
-      "delta": 269,
-      "desc_en": "A WiFi security auditing software",
+      "owner": "NVIDIA",
+      "repo": "SkillEvaluator",
+      "lang": "Python",
+      "stars": 1634,
+      "delta": 205,
+      "desc_en": "Multi-tier framework for evaluating AI agent skills with quality gates, semantic overlap detection, synthetic evaluation dataset generation, and live agent evaluation that measures how skills affect agent behavior.",
       "streak": 0
     }
   ],
@@ -174,100 +148,100 @@
       "owner": "meta",
       "repo": "astryx",
       "lang": "TypeScript",
-      "stars": 28104,
-      "delta": 13375,
+      "stars": 28821,
+      "delta": 13660,
       "desc_en": "An open source design system that's fully customizable and agent ready",
-      "streak": 1
-    },
-    {
-      "owner": "sherlock-project",
-      "repo": "sherlock",
-      "lang": "Python",
-      "stars": 111755,
-      "delta": 13364,
-      "desc_en": "Hunt down social media accounts by username across social networks",
-      "streak": 0
+      "streak": 2
     },
     {
       "owner": "anthropics",
       "repo": "skills",
       "lang": "Python",
-      "stars": 194602,
-      "delta": 6169,
+      "stars": 195338,
+      "delta": 6220,
       "desc_en": "Public repository for Agent Skills",
-      "streak": 12
+      "streak": 13
     },
     {
-      "owner": "vercel-labs",
-      "repo": "agent-browser",
-      "lang": "Rust",
-      "stars": 51182,
-      "delta": 4360,
-      "desc_en": "Browser automation CLI for AI agents",
-      "streak": 8
-    },
-    {
-      "owner": "google",
-      "repo": "elephant-goldfish-model",
+      "owner": "sherlock-project",
+      "repo": "sherlock",
       "lang": "Python",
-      "stars": 19147,
-      "delta": 5560,
-      "desc_en": "Open-source plugin for designing and reviewing software with agents",
-      "streak": 1
-    },
-    {
-      "owner": "milind-soni",
-      "repo": "OpenMausBot",
-      "lang": "TypeScript",
-      "stars": 22746,
-      "delta": 7763,
-      "desc_en": "Open-source Grok Bot alternative with a virtual machine that bots can use",
-      "streak": 11
-    },
-    {
-      "owner": "ZhuLinsen",
-      "repo": "daily_stock_analysis",
-      "lang": "Python",
-      "stars": 72243,
-      "delta": 3778,
-      "desc_en": "LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。 LLM-powered multi-market stock analysis system with multi-source market data, real-time news, decision dashboard, automated notifications, and cost-free scheduled runs.",
-      "streak": 3
-    },
-    {
-      "owner": "google-deepmind",
-      "repo": "mujoco",
-      "lang": "C++",
-      "stars": 17974,
-      "delta": 1764,
-      "desc_en": "Multi-Joint dynamics with Contact. A general purpose physics simulator.",
+      "stars": 112463,
+      "delta": 12401,
+      "desc_en": "Hunt down social media accounts by username across social networks",
       "streak": 0
     },
     {
       "owner": "backnotprop",
       "repo": "plannotator",
       "lang": "TypeScript",
-      "stars": 11079,
-      "delta": 511,
+      "stars": 11806,
+      "delta": 818,
       "desc_en": "The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share with team, and send all feedback to agents with one click.",
-      "streak": 1
+      "streak": 2
+    },
+    {
+      "owner": "vercel-labs",
+      "repo": "agent-browser",
+      "lang": "Rust",
+      "stars": 51597,
+      "delta": 4601,
+      "desc_en": "Browser automation CLI for AI agents",
+      "streak": 9
+    },
+    {
+      "owner": "ZhuLinsen",
+      "repo": "daily_stock_analysis",
+      "lang": "Python",
+      "stars": 72492,
+      "delta": 4526,
+      "desc_en": "LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。 LLM-powered multi-market stock analysis system with multi-source market data, real-time news, decision dashboard, automated notifications, and cost-free scheduled runs.",
+      "streak": 4
+    },
+    {
+      "owner": "we-promise",
+      "repo": "sure",
+      "lang": "Ruby",
+      "stars": 15691,
+      "delta": 4483,
+      "desc_en": "The personal finance app for everyone (by everyone)",
+      "streak": 0
+    },
+    {
+      "owner": "milind-soni",
+      "repo": "OpenMausBot",
+      "lang": "TypeScript",
+      "stars": 23351,
+      "delta": 6413,
+      "desc_en": "Open-source Grok Bot alternative with a virtual machine that bots can use",
+      "streak": 12
+    },
+    {
+      "owner": "google",
+      "repo": "elephant-goldfish-model",
+      "lang": "Python",
+      "stars": 19727,
+      "delta": 5539,
+      "desc_en": "Open-source plugin for designing and reviewing software with agents",
+      "streak": 2
+    },
+    {
+      "owner": "google-deepmind",
+      "repo": "mujoco",
+      "lang": "C++",
+      "stars": 18068,
+      "delta": 1859,
+      "desc_en": "Multi-Joint dynamics with Contact. A general purpose physics simulator.",
+      "streak": 0
     },
     {
       "owner": "addyosmani",
       "repo": "agent-skills",
       "lang": "JavaScript",
-      "stars": 117552,
-      "delta": 3502,
+      "stars": 117929,
+      "delta": 3670,
       "desc_en": "Production-grade engineering skills for AI coding agents.",
-      "streak": 5
-    },
-    {
-      "owner": "anthropics",
-      "repo": "claude-quickstarts",
-      "lang": "Python",
-      "stars": 20972,
-      "delta": 1731,
-      "desc_en": "A collection of projects designed to help developers quickly get started with building deployable applications using the Claude API",
-      "streak": 4
+      "streak": 6
     }
   ]
 }
