@@ -1,5 +1,5 @@
 {
-  "date": "2026-11-18",
+  "date": "2026-11-19",
   "prev": [
     "2026-10-02",
     "2026-10-07",
@@ -33,143 +33,180 @@
     "2026-11-14",
     "2026-11-15",
     "2026-11-16",
-    "2026-11-17"
+    "2026-11-17",
+    "2026-11-18"
   ],
   "daily": [
     {
-      "owner": "elementalsouls",
-      "repo": "Claude-BugHunter",
+      "owner": "cursor",
+      "repo": "plugins",
+      "lang": "TypeScript",
+      "stars": 17205,
+      "delta": 314,
+      "desc_en": "Cursor plugin specification and official plugins",
+      "streak": 9
+    },
+    {
+      "owner": "HKUDS",
+      "repo": "CLI-Anything",
       "lang": "Python",
-      "stars": 9352,
-      "delta": 1005,
-      "desc_en": "A Claude Code skill bundle for bug hunting and external red-team work - 82 skills, 15 slash commands, 681 disclosed-report patterns curated across 24 core vulnerability classes, plus enterprise identity + infrastructure attack matrices.",
-      "streak": 1
+      "stars": 59744,
+      "delta": 389,
+      "desc_en": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/",
+      "streak": 6
     },
     {
       "owner": "mvanhorn",
       "repo": "last30days-skill",
       "lang": "Python",
-      "stars": 69097,
-      "delta": 696,
+      "stars": 70013,
+      "delta": 1059,
       "desc_en": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
-      "streak": 1
-    },
-    {
-      "owner": "alibaba",
-      "repo": "open-code-review",
-      "lang": "Go",
-      "stars": 53751,
-      "delta": 763,
-      "desc_en": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
-      "streak": 4
-    },
-    {
-      "owner": "Tencent",
-      "repo": "LoopForge",
-      "lang": "Go",
-      "stars": 3185,
-      "delta": 591,
-      "desc_en": "Self-hosted workflows for coding-agent delivery. Orchestrate CodeBuddy, Codex and Claude Code with scripts and human approval gates. Includes Local workflows for coding assistants.",
       "streak": 2
-    },
-    {
-      "owner": "dream-num",
-      "repo": "univer",
-      "lang": "TypeScript",
-      "stars": 28916,
-      "delta": 1774,
-      "desc_en": "Build your own AI office with Univer Office SDK. Bring editing, calculation, collaboration, and file processing into your product for people and AI agents. Built on an extensible open-source core.",
-      "streak": 4
     },
     {
       "owner": "getarcaneapp",
       "repo": "arcane",
       "lang": "Go",
-      "stars": 9346,
-      "delta": 618,
+      "stars": 9806,
+      "delta": 547,
       "desc_en": "Modern Docker Management, Designed for Everyone",
       "streak": 0
     },
     {
-      "owner": "google-labs-code",
-      "repo": "stitch-skills",
-      "lang": "TypeScript",
-      "stars": 10117,
-      "delta": 350,
-      "desc_en": "A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, Gemini CLI, Claude Code, Cursor.",
+      "owner": "NVIDIA",
+      "repo": "SkillEvaluator",
+      "lang": "Python",
+      "stars": 3723,
+      "delta": 312,
+      "desc_en": "Multi-tier framework for evaluating AI agent skills and plugins with quality gates, semantic overlap detection, synthetic evaluation dataset generation, and live agent evaluation that measures how skills affect agent behavior.",
       "streak": 2
     },
     {
-      "owner": "cursor",
-      "repo": "plugins",
-      "lang": "TypeScript",
-      "stars": 16913,
-      "delta": 201,
-      "desc_en": "Cursor plugin specification and official plugins",
-      "streak": 8
-    },
-    {
-      "owner": "obra",
-      "repo": "superpowers",
+      "owner": "nvm-sh",
+      "repo": "nvm",
       "lang": "Shell",
-      "stars": 319351,
-      "delta": 1917,
-      "desc_en": "An agentic skills framework & software development methodology that works.",
-      "streak": 11
-    },
-    {
-      "owner": "ag-ui-protocol",
-      "repo": "ag-ui",
-      "lang": "TypeScript",
-      "stars": 20011,
-      "delta": 1445,
-      "desc_en": "AG-UI: the Agent-User Interaction Protocol. Bring Agents into Frontend Applications.",
-      "streak": 3
-    },
-    {
-      "owner": "backnotprop",
-      "repo": "plannotator",
-      "lang": "TypeScript",
-      "stars": 13075,
-      "delta": 691,
-      "desc_en": "The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share with team, and send all feedback to agents with one click.",
-      "streak": 4
-    },
-    {
-      "owner": "sveltejs",
-      "repo": "svelte",
-      "lang": "JavaScript",
-      "stars": 89607,
-      "delta": 477,
-      "desc_en": "web development for the rest of us",
+      "stars": 96148,
+      "delta": 237,
+      "desc_en": "Node Version Manager - POSIX-compliant bash script to manage multiple active node.js versions.",
       "streak": 0
     },
     {
-      "owner": "affaan-m",
-      "repo": "ECC",
-      "lang": "JavaScript",
-      "stars": 305536,
-      "delta": 883,
-      "desc_en": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
-      "streak": 6
-    },
-    {
-      "owner": "jingyaogong",
-      "repo": "minimind",
-      "lang": "Python",
-      "stars": 66001,
-      "delta": 192,
-      "desc_en": "🧠 Train a 64M-parameter LLM from scratch in just 2h!",
+      "owner": "astral-sh",
+      "repo": "uv",
+      "lang": "Rust",
+      "stars": 92220,
+      "delta": 258,
+      "desc_en": "An extremely fast Python package and project manager, written in Rust.",
       "streak": 0
     },
     {
       "owner": "google-research",
       "repo": "paper-orchestra",
       "lang": "Python",
-      "stars": 3038,
-      "delta": 1072,
+      "stars": 4288,
+      "delta": 1524,
       "desc_en": "PaperOrchestra is a multi-agent framework for automated AI research paper writing.",
-      "streak": 1
+      "streak": 2
+    },
+    {
+      "owner": "google-labs-code",
+      "repo": "stitch-skills",
+      "lang": "TypeScript",
+      "stars": 10403,
+      "delta": 365,
+      "desc_en": "A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, Gemini CLI, Claude Code, Cursor.",
+      "streak": 3
+    },
+    {
+      "owner": "sveltejs",
+      "repo": "svelte",
+      "lang": "JavaScript",
+      "stars": 89617,
+      "delta": 692,
+      "desc_en": "web development for the rest of us",
+      "streak": 0
+    },
+    {
+      "owner": "jquery",
+      "repo": "jquery",
+      "lang": "JavaScript",
+      "stars": 60008,
+      "delta": 266,
+      "desc_en": "jQuery JavaScript Library",
+      "streak": 0
+    },
+    {
+      "owner": "appwrite",
+      "repo": "appwrite",
+      "lang": "TypeScript",
+      "stars": 58227,
+      "delta": 232,
+      "desc_en": "The open-source cloud for agents & devs. Including Auth, Databases, Storage, Functions, Messaging, Hosting, Realtime, WAF and more",
+      "streak": 0
+    },
+    {
+      "owner": "openvinotoolkit",
+      "repo": "openvino",
+      "lang": "C++",
+      "stars": 11327,
+      "delta": 24,
+      "desc_en": "OpenVINO™ is an open source toolkit for optimizing and deploying AI inference",
+      "streak": 0
+    },
+    {
+      "owner": "obra",
+      "repo": "superpowers",
+      "lang": "Shell",
+      "stars": 321324,
+      "delta": 822,
+      "desc_en": "An agentic skills framework & software development methodology that works.",
+      "streak": 12
+    },
+    {
+      "owner": "affaan-m",
+      "repo": "ECC",
+      "lang": "JavaScript",
+      "stars": 306516,
+      "delta": 1108,
+      "desc_en": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+      "streak": 7
+    },
+    {
+      "owner": "DeanChensj",
+      "repo": "jiangshan-map",
+      "lang": "JavaScript",
+      "stars": 7937,
+      "delta": 218,
+      "desc_en": "江山时序 · 中国历史交互地图时间轴 (403 BCE – Present) | Interactive Historical Atlas of China across 18 dynasties, 198 territory snapshots, ancient-to-modern place genealogy & classical poetry routes",
+      "streak": 0
+    },
+    {
+      "owner": "n8n-io",
+      "repo": "n8n",
+      "lang": "TypeScript",
+      "stars": 211074,
+      "delta": 325,
+      "desc_en": "Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.",
+      "streak": 0
+    },
+    {
+      "owner": "solidjs",
+      "repo": "solid",
+      "lang": "TypeScript",
+      "stars": 36584,
+      "delta": 40,
+      "desc_en": "A declarative, efficient, and flexible JavaScript library for building user interfaces.",
+      "streak": 0
+    },
+    {
+      "owner": "punkpeye",
+      "repo": "awesome-mcp-servers",
+      "lang": "-",
+      "stars": 98029,
+      "delta": 53,
+      "desc_en": "A collection of MCP servers.",
+      "streak": 0
     }
   ],
   "weekly": [
@@ -177,127 +214,136 @@
       "owner": "GoogleChrome",
       "repo": "modern-web-guidance-src",
       "lang": "TypeScript",
-      "stars": 8460,
-      "delta": 7015,
+      "stars": 8838,
+      "delta": 7257,
       "desc_en": "Keep your coding agent up to date with the latest web best practices",
-      "streak": 2
+      "streak": 3
     },
     {
       "owner": "backnotprop",
       "repo": "plannotator",
       "lang": "TypeScript",
-      "stars": 13075,
-      "delta": 2926,
+      "stars": 13458,
+      "delta": 3290,
       "desc_en": "The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share with team, and send all feedback to agents with one click.",
-      "streak": 4
+      "streak": 5
     },
     {
       "owner": "meta",
       "repo": "astryx",
       "lang": "TypeScript",
-      "stars": 30165,
-      "delta": 8700,
+      "stars": 30572,
+      "delta": 6250,
       "desc_en": "An open source design system that's fully customizable and agent ready",
-      "streak": 3
+      "streak": 4
     },
     {
       "owner": "we-promise",
       "repo": "sure",
       "lang": "Ruby",
-      "stars": 16276,
-      "delta": 4786,
+      "stars": 16499,
+      "delta": 3866,
       "desc_en": "The personal finance app for everyone (by everyone)",
       "streak": 0
-    },
-    {
-      "owner": "ZhuLinsen",
-      "repo": "daily_stock_analysis",
-      "lang": "Python",
-      "stars": 73086,
-      "delta": 3653,
-      "desc_en": "LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。 LLM-powered multi-market stock analysis system with multi-source market data, real-time news, decision dashboard, automated notifications, and cost-free scheduled runs.",
-      "streak": 6
-    },
-    {
-      "owner": "anthropics",
-      "repo": "skills",
-      "lang": "Python",
-      "stars": 196748,
-      "delta": 4847,
-      "desc_en": "Public repository for Agent Skills",
-      "streak": 15
-    },
-    {
-      "owner": "elementalsouls",
-      "repo": "Claude-BugHunter",
-      "lang": "Python",
-      "stars": 9353,
-      "delta": 2508,
-      "desc_en": "A Claude Code skill bundle for bug hunting and external red-team work - 82 skills, 15 slash commands, 681 disclosed-report patterns curated across 24 core vulnerability classes, plus enterprise identity + infrastructure attack matrices.",
-      "streak": 1
     },
     {
       "owner": "alibaba",
       "repo": "open-code-review",
       "lang": "Go",
-      "stars": 53751,
-      "delta": 3675,
+      "stars": 54172,
+      "delta": 4383,
       "desc_en": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
+      "streak": 5
+    },
+    {
+      "owner": "google-labs-code",
+      "repo": "stitch-skills",
+      "lang": "TypeScript",
+      "stars": 10403,
+      "delta": 1567,
+      "desc_en": "A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, Gemini CLI, Claude Code, Cursor.",
+      "streak": 3
+    },
+    {
+      "owner": "tradermonty",
+      "repo": "claude-trading-skills",
+      "lang": "Python",
+      "stars": 7079,
+      "delta": 3242,
+      "desc_en": "Claude Code skills for equity investors and traders — market analysis, technical charting, economic calendars, screeners, and trading strategy development.",
+      "streak": 5
+    },
+    {
+      "owner": "ChromeDevTools",
+      "repo": "chrome-devtools-mcp",
+      "lang": "TypeScript",
+      "stars": 58212,
+      "delta": 3143,
+      "desc_en": "Chrome DevTools for coding agents",
+      "streak": 5
+    },
+    {
+      "owner": "anthropics",
+      "repo": "skills",
+      "lang": "Python",
+      "stars": 197212,
+      "delta": 4381,
+      "desc_en": "Public repository for Agent Skills",
+      "streak": 16
+    },
+    {
+      "owner": "ZhuLinsen",
+      "repo": "daily_stock_analysis",
+      "lang": "Python",
+      "stars": 73349,
+      "delta": 3566,
+      "desc_en": "LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。 LLM-powered multi-market stock analysis system with multi-source market data, real-time news, decision dashboard, automated notifications, and cost-free scheduled runs.",
+      "streak": 7
+    },
+    {
+      "owner": "mvanhorn",
+      "repo": "last30days-skill",
+      "lang": "Python",
+      "stars": 70013,
+      "delta": 2423,
+      "desc_en": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
+      "streak": 2
+    },
+    {
+      "owner": "ag-ui-protocol",
+      "repo": "ag-ui",
+      "lang": "TypeScript",
+      "stars": 20437,
+      "delta": 3221,
+      "desc_en": "AG-UI: the Agent-User Interaction Protocol. Bring Agents into Frontend Applications.",
       "streak": 4
     },
     {
       "owner": "vercel-labs",
       "repo": "agent-browser",
       "lang": "Rust",
-      "stars": 52383,
-      "delta": 3429,
+      "stars": 52652,
+      "delta": 2987,
       "desc_en": "Browser automation CLI for AI agents",
-      "streak": 11
-    },
-    {
-      "owner": "ChromeDevTools",
-      "repo": "chrome-devtools-mcp",
-      "lang": "TypeScript",
-      "stars": 58043,
-      "delta": 2948,
-      "desc_en": "Chrome DevTools for coding agents",
-      "streak": 4
-    },
-    {
-      "owner": "tradermonty",
-      "repo": "claude-trading-skills",
-      "lang": "Python",
-      "stars": 6871,
-      "delta": 2985,
-      "desc_en": "Claude Code skills for equity investors and traders — market analysis, technical charting, economic calendars, screeners, and trading strategy development.",
-      "streak": 4
-    },
-    {
-      "owner": "google-labs-code",
-      "repo": "stitch-skills",
-      "lang": "TypeScript",
-      "stars": 10117,
-      "delta": 1197,
-      "desc_en": "A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, Gemini CLI, Claude Code, Cursor.",
-      "streak": 2
+      "streak": 12
     },
     {
       "owner": "openai",
       "repo": "codex-security",
       "lang": "TypeScript",
-      "stars": 13961,
-      "delta": 2531,
+      "stars": 14116,
+      "delta": 2630,
       "desc_en": "OpenAI's Codex Security CLI and TypeScript SDK for finding, validating, and fixing security vulnerabilities. npm: https://www.npmjs.com/package/@openai/codex-security",
-      "streak": 4
+      "streak": 5
     },
     {
-      "owner": "addyosmani",
-      "repo": "agent-skills",
-      "lang": "JavaScript",
-      "stars": 118669,
-      "delta": 3884,
-      "desc_en": "Production-grade engineering skills for AI coding agents.",
-      "streak": 8
+      "owner": "dream-num",
+      "repo": "univer",
+      "lang": "TypeScript",
+      "stars": 29886,
+      "delta": 6840,
+      "desc_en": "Build your own AI office with Univer Office SDK. Bring editing, calculation, collaboration, and file processing into your product for people and AI agents. Built on an extensible open-source core.",
+      "streak": 5
     }
   ]
 }
