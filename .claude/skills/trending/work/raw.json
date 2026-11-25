@@ -1,5 +1,5 @@
 {
-  "date": "2026-11-24",
+  "date": "2026-11-25",
   "prev": [
     "2026-10-02",
     "2026-10-07",
@@ -39,69 +39,70 @@
     "2026-11-20",
     "2026-11-21",
     "2026-11-22",
-    "2026-11-23"
+    "2026-11-23",
+    "2026-11-24"
   ],
   "daily": [
     {
       "owner": "elementalsouls",
       "repo": "Claude-BugHunter",
       "lang": "Python",
-      "stars": 20005,
-      "delta": 2029,
+      "stars": 21606,
+      "delta": 1826,
       "desc_en": "A Claude Code skill bundle for bug hunting and external red-team work - 84 skills, 15 slash commands, 681 disclosed-report patterns curated across 24 core vulnerability classes, plus enterprise identity + infrastructure attack matrices.",
-      "streak": 6
+      "streak": 7
     },
     {
       "owner": "obra",
       "repo": "superpowers",
       "lang": "Shell",
-      "stars": 325212,
-      "delta": 840,
+      "stars": 325894,
+      "delta": 1003,
       "desc_en": "An agentic skills framework & software development methodology that works.",
-      "streak": 17
+      "streak": 18
     },
     {
       "owner": "HKUDS",
       "repo": "CLI-Anything",
       "lang": "Python",
-      "stars": 63837,
-      "delta": 790,
+      "stars": 64910,
+      "delta": 1074,
       "desc_en": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/",
-      "streak": 11
+      "streak": 12
     },
     {
       "owner": "jingyaogong",
       "repo": "minimind",
       "lang": "Python",
-      "stars": 69611,
-      "delta": 828,
+      "stars": 70327,
+      "delta": 727,
       "desc_en": "🧠 两小时从 0 训出你的 64M 大模型。Train your own 64M LLM from scratch in 2 hours.",
-      "streak": 5
+      "streak": 6
     },
     {
       "owner": "cursor",
       "repo": "plugins",
       "lang": "TypeScript",
-      "stars": 18873,
-      "delta": 397,
+      "stars": 19258,
+      "delta": 360,
       "desc_en": "Cursor plugin specification and official plugins",
-      "streak": 14
+      "streak": 15
     },
     {
       "owner": "firecrawl",
       "repo": "firecrawl",
       "lang": "TypeScript",
-      "stars": 208066,
-      "delta": 924,
+      "stars": 209020,
+      "delta": 991,
       "desc_en": "Knowledge infrastructure to make your agents smarter. Search, scrape and access 550+ data providers through one API.",
-      "streak": 4
+      "streak": 5
     },
     {
       "owner": "nginx",
       "repo": "nginx",
       "lang": "C",
-      "stars": 33080,
-      "delta": 174,
+      "stars": 33235,
+      "delta": 158,
       "desc_en": "The official NGINX Open Source repository.",
       "streak": 0
     },
@@ -109,62 +110,62 @@
       "owner": "openvinotoolkit",
       "repo": "openvino",
       "lang": "C++",
-      "stars": 12314,
-      "delta": 184,
+      "stars": 12484,
+      "delta": 185,
       "desc_en": "OpenVINO™ is an open source toolkit for optimizing and deploying AI inference",
-      "streak": 5
+      "streak": 6
     },
     {
       "owner": "cathrynlavery",
       "repo": "diagram-design",
       "lang": "HTML",
-      "stars": 71111,
-      "delta": 620,
+      "stars": 72163,
+      "delta": 802,
       "desc_en": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid, Qoder, and Pi. 52 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop.",
-      "streak": 14
+      "streak": 15
     },
     {
       "owner": "mvanhorn",
       "repo": "last30days-skill",
       "lang": "Python",
-      "stars": 73547,
-      "delta": 797,
+      "stars": 74295,
+      "delta": 703,
       "desc_en": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
-      "streak": 7
+      "streak": 8
     },
     {
       "owner": "google-labs-code",
       "repo": "stitch-skills",
       "lang": "TypeScript",
-      "stars": 12364,
-      "delta": 422,
+      "stars": 12702,
+      "delta": 403,
       "desc_en": "A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, Gemini CLI, Claude Code, Cursor.",
-      "streak": 8
+      "streak": 9
     },
     {
       "owner": "mjmirza",
       "repo": "app-store-compliance",
       "lang": "Shell",
-      "stars": 5090,
-      "delta": 761,
+      "stars": 5923,
+      "delta": 928,
       "desc_en": "Avoid common App Store and Google Play rejections. Open playbook and pre-submission guard with 124 documented rejection patterns and fixes, privacy manifest and Data safety checks, 112 tracked deadlines (EU AI Act, DSA, COPPA, age laws), and a skill for AI coding agents.",
-      "streak": 4
+      "streak": 5
     },
     {
       "owner": "Tracer-Cloud",
       "repo": "opensre",
       "lang": "Python",
-      "stars": 14883,
-      "delta": 436,
+      "stars": 15217,
+      "delta": 398,
       "desc_en": "The open-source agent for CI/CD reliability.",
-      "streak": 4
+      "streak": 5
     },
     {
       "owner": "toeverything",
       "repo": "AFFiNE",
       "lang": "TypeScript",
-      "stars": 77474,
-      "delta": 595,
+      "stars": 78037,
+      "delta": 584,
       "desc_en": "There can be more than Notion and Miro. AFFiNE(pronounced [ə‘fain]) is a next-gen knowledge base that brings planning, sorting and creating all together. Privacy first, open-source, customizable and ready to use.",
       "streak": 0
     },
@@ -172,8 +173,8 @@
       "owner": "XiaoYouChR",
       "repo": "Ghost-Downloader-3",
       "lang": "Python",
-      "stars": 16489,
-      "delta": 1087,
+      "stars": 17462,
+      "delta": 1092,
       "desc_en": "The only downloader you need. 下载器的集大成者。",
       "streak": 0
     },
@@ -181,10 +182,10 @@
       "owner": "zhouxiaoka",
       "repo": "autoclip",
       "lang": "Python",
-      "stars": 14596,
-      "delta": 907,
+      "stars": 15459,
+      "delta": 980,
       "desc_en": "AutoClip｜一个链接，一键出片。开源 AI 视频剪辑桌面工具，将播客、访谈、课程等长视频自动剪成短视频，生成字幕、封面和发布文案，适配抖音、小红书、TikTok、Reels 与 YouTube Shorts。Open-source AI video clipping & content repurposing.",
-      "streak": 4
+      "streak": 5
     }
   ],
   "weekly": [
@@ -192,89 +193,89 @@
       "owner": "backnotprop",
       "repo": "plannotator",
       "lang": "TypeScript",
-      "stars": 14701,
-      "delta": 2395,
+      "stars": 14913,
+      "delta": 1956,
       "desc_en": "The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share with team, and send all feedback to agents with one click.",
-      "streak": 10
+      "streak": 11
     },
     {
       "owner": "google-labs-code",
       "repo": "stitch-skills",
       "lang": "TypeScript",
-      "stars": 12364,
-      "delta": 2572,
+      "stars": 12702,
+      "delta": 2626,
       "desc_en": "A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, Gemini CLI, Claude Code, Cursor.",
-      "streak": 8
+      "streak": 9
     },
     {
       "owner": "GoogleChrome",
       "repo": "modern-web-guidance-src",
       "lang": "TypeScript",
-      "stars": 10567,
-      "delta": 2694,
+      "stars": 10841,
+      "delta": 2494,
       "desc_en": "Keep your coding agent up to date with the latest web best practices",
-      "streak": 7
+      "streak": 8
     },
     {
       "owner": "alibaba",
       "repo": "open-code-review",
       "lang": "Go",
-      "stars": 55767,
-      "delta": 3015,
+      "stars": 56081,
+      "delta": 2638,
       "desc_en": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
-      "streak": 10
+      "streak": 11
     },
     {
       "owner": "mvanhorn",
       "repo": "last30days-skill",
       "lang": "Python",
-      "stars": 73547,
-      "delta": 5448,
+      "stars": 74295,
+      "delta": 5369,
       "desc_en": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
-      "streak": 7
+      "streak": 8
     },
     {
       "owner": "ChromeDevTools",
       "repo": "chrome-devtools-mcp",
       "lang": "TypeScript",
-      "stars": 59063,
-      "delta": 1581,
+      "stars": 59229,
+      "delta": 1258,
       "desc_en": "Chrome DevTools for coding agents",
-      "streak": 10
+      "streak": 11
     },
     {
       "owner": "tradermonty",
       "repo": "claude-trading-skills",
       "lang": "Python",
-      "stars": 8106,
-      "delta": 1903,
+      "stars": 8315,
+      "delta": 1504,
       "desc_en": "Claude Code skills for equity investors and traders — market analysis, technical charting, economic calendars, screeners, and trading strategy development.",
-      "streak": 10
+      "streak": 11
     },
     {
       "owner": "ag-ui-protocol",
       "repo": "ag-ui",
       "lang": "TypeScript",
-      "stars": 21418,
-      "delta": 2966,
+      "stars": 21585,
+      "delta": 1753,
       "desc_en": "AG-UI: the Agent-User Interaction Protocol. Bring Agents into Frontend Applications.",
-      "streak": 9
+      "streak": 10
     },
     {
       "owner": "meta",
       "repo": "astryx",
       "lang": "TypeScript",
-      "stars": 32616,
-      "delta": 3165,
+      "stars": 32899,
+      "delta": 2890,
       "desc_en": "An open source design system that's fully customizable and agent ready",
-      "streak": 7
+      "streak": 8
     },
     {
       "owner": "pookjw",
       "repo": "HermesEnabler",
       "lang": "Objective-C",
-      "stars": 2455,
-      "delta": 390,
+      "stars": 2492,
+      "delta": 328,
       "desc_en": "Enable Hermès Watch Faces on any Apple Watch devices",
       "streak": 0
     },
@@ -282,8 +283,8 @@
       "owner": "we-promise",
       "repo": "sure",
       "lang": "Ruby",
-      "stars": 17601,
-      "delta": 1612,
+      "stars": 17788,
+      "delta": 1567,
       "desc_en": "The personal finance app for everyone (by everyone)",
       "streak": 0
     },
@@ -291,19 +292,19 @@
       "owner": "dream-num",
       "repo": "univer",
       "lang": "TypeScript",
-      "stars": 31524,
-      "delta": 4324,
+      "stars": 31714,
+      "delta": 3278,
       "desc_en": "Build your own AI office with Univer Office SDK. Bring editing, calculation, collaboration, and file processing into your product for people and AI agents. Built on an extensible open-source core.",
-      "streak": 10
+      "streak": 11
     },
     {
       "owner": "kajisho5",
       "repo": "ffmpeg-skill",
       "lang": "Python",
-      "stars": 10302,
-      "delta": 3891,
+      "stars": 10734,
+      "delta": 2993,
       "desc_en": "Local video editor for coding agents: 42 FFmpeg tools with a machine-readable contract and an MCP server, for Claude Code, Cursor and Codex. Cut, captions, reframe, loudness, platform exports. No cloud, no API keys.",
-      "streak": 5
+      "streak": 6
     }
   ]
 }
